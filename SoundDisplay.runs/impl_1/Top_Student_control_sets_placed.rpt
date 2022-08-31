@@ -1,0 +1,154 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Oct 31 04:56:29 2020
+| Host         : DESKTOP-RMA0D9F running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    84 |
+| Unused register locations in slices containing registers |   220 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            7 |
+|      4 |            3 |
+|      6 |            1 |
+|      8 |            6 |
+|     10 |            9 |
+|     12 |            1 |
+|    16+ |           57 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             506 |          131 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            1758 |          248 |
+| Yes          | No                    | No                     |             232 |           43 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             364 |           55 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------+------------------+----------------+
+|                          Clock Signal                          |                           Enable Signal                          |                              Set/Reset Signal                             | Slice Load Count | Bel Load Count |
++----------------------------------------------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------+------------------+----------------+
+|  menuSelection/first/menuSelect                                |                                                                  |                                                                           |                1 |              2 |
+|  mic2_dist/clk_out                                             |                                                                  |                                                                           |                1 |              2 |
+|  nolabel_line114/twentykhz/c20khz_0                            |                                                                  |                                                                           |                1 |              2 |
+|  mic1_dist/clk_out                                             |                                                                  |                                                                           |                1 |              2 |
+|  amplifier/c20khz                                              |                                                                  |                                                                           |                1 |              2 |
+| ~clk6p25m_BUFG                                                 |                                                                  |                                                                           |                1 |              2 |
+|  nolabel_line114/BTauto_reg_i_1_n_0                            |                                                                  |                                                                           |                1 |              2 |
+|  nolabel_line116/mic2_dist/tune_distance/btclk/clk             |                                                                  |                                                                           |                1 |              4 |
+|  nolabel_line116/mic1_dist/tune_distance/btclk/clk             |                                                                  |                                                                           |                1 |              4 |
+|  nolabel_line114/amplifier/s0hold_reg[6]_0                     |                                                                  |                                                                           |                2 |              4 |
+|  menuSelect_clk_BUFG                                           |                                                                  |                                                                           |                3 |              6 |
+|  clk6p25m_BUFG                                                 |                                                                  | firstDisplay/oled_data_final_reg[15]                                      |                1 |              8 |
+|  eightHz/clk8                                                  |                                                                  | new_mic_in_data/oled_data_case[3]_i_1_n_0                                 |                4 |              8 |
+|  menuSelect_clk_BUFG                                           | firstDisplay/E[0]                                                |                                                                           |                4 |              8 |
+|  nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/an_reg[0] |                                                                  | nolabel_line114/Aprocess/volume/SevSegOut/sevsegout[6]_i_1_n_0            |                2 |              8 |
+|  nolabel_line114/Aprocess/fivehz/CLK                           |                                                                  |                                                                           |                4 |              8 |
+|  basys_clock_IBUF_BUFG                                         | nolabel_line114/amplifier/auto_display/load_dp                   |                                                                           |                1 |              8 |
+|  nolabel_line114/amplifier/auto_tune/logic_clk                 |                                                                  |                                                                           |                4 |             10 |
+|  oled_debounce/twentyhz                                        | subtask4B/new_colors/volume_color_mid[5]_i_1_n_0                 |                                                                           |                2 |             10 |
+|  menuSelect_clk_BUFG                                           | firstDisplay/t_bgc_signal                                        |                                                                           |                2 |             10 |
+|  amplifier/btclk                                               | nolabel_line114/amplifier/buttoDown/flips/E[0]                   |                                                                           |                2 |             10 |
+|  clk6p25m_BUFG                                                 | oled/E[0]                                                        |                                                                           |                4 |             10 |
+|  basys_clock_IBUF_BUFG                                         | nolabel_line114/amplifier/auto_display/seg2[6]_i_2_n_0           | nolabel_line114/amplifier/auto_display/seg2[6]_i_1_n_0                    |                2 |             10 |
+|  nolabel_line116/mic1_dist/tune_distance/logic_clk             |                                                                  |                                                                           |                2 |             10 |
+|  nolabel_line116/mic2_dist/tune_distance/logic_clk             |                                                                  |                                                                           |                3 |             10 |
+|  menuSelect_clk_BUFG                                           |                                                                  | firstDisplay/p_0_in[0]                                                    |                2 |             10 |
+|  amplifier/btclk                                               |                                                                  |                                                                           |                5 |             12 |
+|  nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/an_reg[0] |                                                                  |                                                                           |                2 |             18 |
+|  amplifier/btclk                                               | A_switch_reg_n_0_[1]                                             | nolabel_line114/amplifier/s0hold_reg[6]_0                                 |                3 |             18 |
+|  basys_clock_IBUF_BUFG                                         | nolabel_line114/amplifier/auto_display/seg0[6]_i_1_n_0           |                                                                           |                3 |             18 |
+|  nolabel_line114/twentykhz/c20khz_0                            |                                                                  | nolabel_line114/Aprocess/reset[10]_i_1__0_n_0                             |                3 |             20 |
+|  clk6p25m_BUFG                                                 |                                                                  |                                                                           |                6 |             20 |
+|  amplifier/c20khz                                              |                                                                  | nolabel_line114/amplifier/reset[10]_i_1_n_0                               |                3 |             20 |
+|  I_MIC3_Pin1_OBUF_BUFG                                         |                                                                  | new_mic_in_data/reset[11]_i_1_n_0                                         |                3 |             22 |
+|  nolabel_line116/mic1_dist/fivehz/average_bit_tuned_reg[1]     |                                                                  |                                                                           |                3 |             22 |
+|  nolabel_line116/mic2_dist/fivehz/average_bit_tuned_reg[1]     |                                                                  |                                                                           |                5 |             22 |
+| ~audio/J_MIC3_Pin4_OBUF                                        |                                                                  |                                                                           |                5 |             24 |
+| ~nolabel_line94/I_MIC3_Pin4_OBUF                               |                                                                  |                                                                           |                3 |             24 |
+|  mic1_dist/clk_out                                             | nolabel_line116/mic1_dist/CEA2                                   | nolabel_line116/mic1_dist/tune_distance/SR[0]                             |                2 |             24 |
+|  I_MIC3_Pin1_OBUF_BUFG                                         | new_mic_in_data/values[11]_i_2_n_0                               | new_mic_in_data/values0                                                   |                4 |             24 |
+|  amplifier/c20khz                                              | nolabel_line114/amplifier/p_0_in                                 | nolabel_line114/amplifier/reset[10]_i_1_n_0                               |                4 |             24 |
+|  mic2_dist/clk_out                                             | nolabel_line116/mic2_dist/CEA2                                   | nolabel_line116/mic2_dist/tune_distance/SR[0]                             |                2 |             24 |
+|  nolabel_line114/twentykhz/c20khz_0                            | nolabel_line114/Aprocess/max_vol_reg[11]_i_1_n_2                 | nolabel_line114/Aprocess/reset[10]_i_1__0_n_0                             |                5 |             24 |
+|  amplifier/c20khz                                              | nolabel_line114/amplifier/reset[10]_i_1_n_0                      |                                                                           |                4 |             24 |
+|  nolabel_line114/rawdata/segdisp/sevsegclk/clk_out             |                                                                  |                                                                           |                6 |             26 |
+|  oled_debounce/twentyhz                                        |                                                                  |                                                                           |                7 |             28 |
+|  nolabel_line114/amplifier/seggg/sevsegclk/CLK                 |                                                                  |                                                                           |                3 |             28 |
+|  nolabel_line114/rawdata/clkddd/CLK                            |                                                                  |                                                                           |                8 |             30 |
+|  amplifier/btclk                                               | A_switch_reg_n_0_[1]                                             |                                                                           |                7 |             30 |
+| ~clk6p25m_BUFG                                                 |                                                                  | oled/frame_counter[16]_i_1_n_0                                            |                5 |             34 |
+| ~clk6p25m_BUFG                                                 | oled/delay[0]_i_1_n_0                                            |                                                                           |                5 |             40 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | I_MIC3_Pin1_OBUF_BUFG                                                     |                6 |             48 |
+|  I_MIC3_Pin1_OBUF_BUFG                                         |                                                                  |                                                                           |               11 |             50 |
+|  basys_clock_IBUF_BUFG                                         | nolabel_line114/amplifier/auto_tune/flag                         | nolabel_line114/amplifier/auto_display/ck_load[25]_i_1_n_0                |                7 |             50 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line116/mic1_dist/tune_distance/buttonUP/flips/c10sec_reg_0_sn_1  |                7 |             52 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line116/mic2_dist/tune_distance/buttonUP/flips/c10sec_reg_0_sn_1  |                7 |             52 |
+|  menuSelect_clk_BUFG                                           | firstDisplay/an_hold                                             | firstDisplay/selection[0]                                                 |               11 |             54 |
+|  basys_clock_IBUF_BUFG                                         | nolabel_line114/amplifier/auto_display/post_load_count_reg[27]_0 | nolabel_line114/amplifier/auto_tune/flag                                  |                7 |             56 |
+|  clk6p25m_BUFG                                                 |                                                                  | flag__0_i_1_n_0                                                           |               20 |             56 |
+|  basys_clock_IBUF_BUFG                                         | nolabel_line114/amplifier/auto_tune/p_1_in0                      | nolabel_line114/amplifier/auto_display/flip                               |                8 |             56 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line114/amplifier/auto_tune/c10sec[0]_i_1_n_0                     |                8 |             58 |
+|  mic1_dist/clk_out                                             |                                                                  | nolabel_line116/mic1_dist/tune_distance/SR[0]                             |                8 |             60 |
+|  mic2_dist/clk_out                                             |                                                                  | nolabel_line116/mic2_dist/tune_distance/SR[0]                             |                8 |             60 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line114/amplifier/clock_bt/clear                                  |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line114/amplifier/twentykhz/clear                                 |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | eightHz/clear                                                             |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | oled_debounce/clear                                                       |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/counter[0]_i_1__7_n_0 |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line114/Aprocess/fivehz/clear                                     |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line114/twentykhz/clear                                           |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line114/rawdata/segdisp/sevsegclk/clear                           |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line116/mic1_dist/tune_distance/btclk/clear                       |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line116/mic1_dist/clock_hz/counter[0]_i_1__10_n_0                 |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line116/mic1_dist/fivehz/counter[0]_i_1__11_n_0                   |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line116/mic2_dist/tune_distance/btclk/clear                       |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line116/mic2_dist/fivehz/counter[0]_i_1__14_n_0                   |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line116/mic2_dist/clock_hz/counter[0]_i_1__13_n_0                 |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | twentyKHz/clear                                                           |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line114/rawdata/clkddd/counter[0]_i_1__5_n_0                      |                8 |             64 |
+| ~clk6p25m_BUFG                                                 | oled/state                                                       |                                                                           |                9 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | nolabel_line114/amplifier/seggg/sevsegclk/clear                           |                8 |             64 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  | sizMHz/clear                                                              |                8 |             64 |
+| ~clk6p25m_BUFG                                                 |                                                                  | oled/spi_word[39]_i_1_n_0                                                 |               17 |             90 |
+|  basys_clock_IBUF_BUFG                                         |                                                                  |                                                                           |               40 |            132 |
++----------------------------------------------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------+------------------+----------------+
+
+

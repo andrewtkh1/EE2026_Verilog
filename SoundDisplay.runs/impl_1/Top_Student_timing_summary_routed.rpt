@@ -1,0 +1,1803 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Oct 31 04:57:31 2020
+| Host         : DESKTOP-RMA0D9F running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file Top_Student_timing_summary_routed.rpt -pb Top_Student_timing_summary_routed.pb -rpx Top_Student_timing_summary_routed.rpx -warn_on_violation
+| Design       : Top_Student
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.22 2018-03-21
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 3 register/latch pins with no clock driven by root clock pin: A_switch_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: A_switch_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: audio/sclk_reg/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: eightHz/clk_out_reg/Q (HIGH)
+
+ There are 44 register/latch pins with no clock driven by root clock pin: flag_reg__0/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: menuSelection/first/q_output_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: menuSelection/second/q_output_reg/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: nolabel_line114/Aprocess/fivehz/clk_out_reg/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/clk_out_reg/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: nolabel_line114/amplifier/clock_bt/clk_out_reg/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: nolabel_line114/amplifier/seggg/sevsegclk/clk_out_reg/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: nolabel_line114/amplifier/twentykhz/clk_out_reg/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: nolabel_line114/rawdata/clkddd/clk_out_reg/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: nolabel_line114/rawdata/segdisp/sevsegclk/clk_out_reg/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: nolabel_line114/twentykhz/clk_out_reg/Q (HIGH)
+
+ There are 44 register/latch pins with no clock driven by root clock pin: nolabel_line116/mic1_dist/clock_hz/clk_out_reg/Q (HIGH)
+
+ There are 11 register/latch pins with no clock driven by root clock pin: nolabel_line116/mic1_dist/fivehz/clk_out_reg/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: nolabel_line116/mic1_dist/tune_distance/btclk/clk_out_reg/Q (HIGH)
+
+ There are 44 register/latch pins with no clock driven by root clock pin: nolabel_line116/mic2_dist/clock_hz/clk_out_reg/Q (HIGH)
+
+ There are 11 register/latch pins with no clock driven by root clock pin: nolabel_line116/mic2_dist/fivehz/clk_out_reg/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: nolabel_line116/mic2_dist/tune_distance/btclk/clk_out_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: nolabel_line94/sclk_reg/Q (HIGH)
+
+ There are 19 register/latch pins with no clock driven by root clock pin: oled_debounce/clk_out_reg/Q (HIGH)
+
+ There are 206 register/latch pins with no clock driven by root clock pin: sizMHz/clk_out_reg/Q (HIGH)
+
+ There are 49 register/latch pins with no clock driven by root clock pin: twentyKHz/clk_out_reg/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 1101 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 14 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 38 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+    -13.402      -90.614                     15                 1758        0.173        0.000                      0                 1758        4.500        0.000                       0                   862  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin       -13.402      -90.614                     15                 1758        0.173        0.000                      0                 1758        4.500        0.000                       0                   862  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :           15  Failing Endpoints,  Worst Slack      -13.402ns,  Total Violation      -90.614ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.173ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -13.402ns  (required time - arrival time)
+  Source:                 nolabel_line114/amplifier/auto_tune/xer3/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line114/amplifier/auto_tune/xer_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        21.715ns  (logic 12.356ns (56.902%)  route 9.359ns (43.098%))
+  Logic Levels:           28  (CARRY4=14 DSP48E1=1 LUT2=1 LUT3=4 LUT4=3 LUT5=1 LUT6=4)
+  Clock Path Skew:        -1.684ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.427ns = ( 13.427 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.182ns
+    Clock Pessimism Removal (CPR):    0.070ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.967     3.425    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         1.661     5.182    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF_BUFG
+    DSP48_X1Y2           DSP48E1                                      r  nolabel_line114/amplifier/auto_tune/xer3/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y2           DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.388 r  nolabel_line114/amplifier/auto_tune/xer3/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.390    nolabel_line114/amplifier/auto_tune/xer3_n_106
+    DSP48_X1Y3           DSP48E1 (Prop_dsp48e1_PCIN[47]_P[1])
+                                                      1.518    10.908 f  nolabel_line114/amplifier/auto_tune/xer3__0/P[1]
+                         net (fo=39, routed)          1.092    12.000    nolabel_line114/amplifier/auto_tune/xer3__0_n_104
+    SLICE_X59Y5          LUT3 (Prop_lut3_I1_O)        0.124    12.124 r  nolabel_line114/amplifier/auto_tune/xer2__302_i_1/O
+                         net (fo=2, routed)           0.753    12.877    nolabel_line114/amplifier/auto_tune/xer2__302_i_1_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.396    13.273 r  nolabel_line114/amplifier/auto_tune/xer2__302/CO[3]
+                         net (fo=1, routed)           0.000    13.273    nolabel_line114/amplifier/auto_tune/xer2__302_n_0
+    SLICE_X54Y6          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    13.596 r  nolabel_line114/amplifier/auto_tune/xer2__303/O[1]
+                         net (fo=3, routed)           0.810    14.407    nolabel_line114/amplifier/auto_tune/xer2__303_n_6
+    SLICE_X59Y6          LUT3 (Prop_lut3_I2_O)        0.306    14.713 r  nolabel_line114/amplifier/auto_tune/xer2__341_i_2/O
+                         net (fo=1, routed)           0.731    15.443    nolabel_line114/amplifier/auto_tune/xer2__341_i_2_n_0
+    SLICE_X55Y6          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    15.841 r  nolabel_line114/amplifier/auto_tune/xer2__341/CO[3]
+                         net (fo=1, routed)           0.000    15.841    nolabel_line114/amplifier/auto_tune/xer2__341_n_0
+    SLICE_X55Y7          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.063 r  nolabel_line114/amplifier/auto_tune/xer2__342/O[0]
+                         net (fo=3, routed)           0.649    16.712    nolabel_line114/amplifier/auto_tune/xer2__342_n_7
+    SLICE_X48Y6          LUT3 (Prop_lut3_I0_O)        0.299    17.011 r  nolabel_line114/amplifier/auto_tune/xer2__353_i_3/O
+                         net (fo=1, routed)           0.664    17.675    nolabel_line114/amplifier/auto_tune/xer2__353_i_3_n_0
+    SLICE_X51Y6          CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    18.182 r  nolabel_line114/amplifier/auto_tune/xer2__353/CO[3]
+                         net (fo=1, routed)           0.000    18.182    nolabel_line114/amplifier/auto_tune/xer2__353_n_0
+    SLICE_X51Y7          CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    18.495 r  nolabel_line114/amplifier/auto_tune/xer2__354/O[3]
+                         net (fo=6, routed)           0.787    19.282    nolabel_line114/amplifier/auto_tune/xer2__354_n_4
+    SLICE_X49Y5          LUT2 (Prop_lut2_I0_O)        0.306    19.588 r  nolabel_line114/amplifier/auto_tune/xer2__362_i_3/O
+                         net (fo=1, routed)           0.000    19.588    nolabel_line114/amplifier/auto_tune/xer2__362_i_3_n_0
+    SLICE_X49Y5          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.138 r  nolabel_line114/amplifier/auto_tune/xer2__362/CO[3]
+                         net (fo=1, routed)           0.000    20.138    nolabel_line114/amplifier/auto_tune/xer2__362_n_0
+    SLICE_X49Y6          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    20.472 r  nolabel_line114/amplifier/auto_tune/xer2__363/O[1]
+                         net (fo=3, routed)           0.704    21.176    nolabel_line114/amplifier/auto_tune/xer2__363_n_6
+    SLICE_X50Y5          LUT4 (Prop_lut4_I1_O)        0.303    21.479 r  nolabel_line114/amplifier/auto_tune/xer2__371_i_5/O
+                         net (fo=1, routed)           0.000    21.479    nolabel_line114/amplifier/auto_tune/xer2__371_i_5_n_0
+    SLICE_X50Y5          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    21.855 r  nolabel_line114/amplifier/auto_tune/xer2__371/CO[3]
+                         net (fo=1, routed)           0.000    21.855    nolabel_line114/amplifier/auto_tune/xer2__371_n_0
+    SLICE_X50Y6          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    21.972 r  nolabel_line114/amplifier/auto_tune/xer2__372/CO[3]
+                         net (fo=1, routed)           0.000    21.972    nolabel_line114/amplifier/auto_tune/xer2__372_n_0
+    SLICE_X50Y7          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.089 r  nolabel_line114/amplifier/auto_tune/xer2__373/CO[3]
+                         net (fo=1, routed)           0.000    22.089    nolabel_line114/amplifier/auto_tune/xer2__373_n_0
+    SLICE_X50Y8          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.206 r  nolabel_line114/amplifier/auto_tune/xer2__374/CO[3]
+                         net (fo=1, routed)           0.000    22.206    nolabel_line114/amplifier/auto_tune/xer2__374_n_0
+    SLICE_X50Y9          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.323 r  nolabel_line114/amplifier/auto_tune/xer2__375/CO[3]
+                         net (fo=1, routed)           0.000    22.323    nolabel_line114/amplifier/auto_tune/xer2__375_n_0
+    SLICE_X50Y10         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.229    22.552 f  nolabel_line114/amplifier/auto_tune/xer2__376/CO[2]
+                         net (fo=8, routed)           0.359    22.911    nolabel_line114/amplifier/auto_tune/xer2__376_n_1
+    SLICE_X52Y10         LUT3 (Prop_lut3_I0_O)        0.310    23.221 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_9/O
+                         net (fo=6, routed)           0.605    23.826    nolabel_line114/amplifier/auto_tune/xer[1]_i_9_n_0
+    SLICE_X59Y10         LUT5 (Prop_lut5_I3_O)        0.124    23.950 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_10/O
+                         net (fo=1, routed)           0.302    24.253    nolabel_line114/amplifier/auto_tune/xer[1]_i_10_n_0
+    SLICE_X58Y8          LUT6 (Prop_lut6_I5_O)        0.124    24.377 f  nolabel_line114/amplifier/auto_tune/xer[1]_i_6/O
+                         net (fo=1, routed)           0.688    25.064    nolabel_line114/amplifier/auto_tune/xer[1]_i_6_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124    25.188 f  nolabel_line114/amplifier/auto_tune/xer[1]_i_2/O
+                         net (fo=5, routed)           0.173    25.361    nolabel_line114/amplifier/auto_tune/xer[1]_i_2_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I0_O)        0.124    25.485 f  nolabel_line114/amplifier/auto_tune/xer[3]_i_6/O
+                         net (fo=1, routed)           0.292    25.778    nolabel_line114/amplifier/auto_tune/xer[3]_i_6_n_0
+    SLICE_X59Y8          LUT6 (Prop_lut6_I5_O)        0.124    25.902 f  nolabel_line114/amplifier/auto_tune/xer[3]_i_3/O
+                         net (fo=5, routed)           0.335    26.236    nolabel_line114/amplifier/auto_tune/xer[3]_i_3_n_0
+    SLICE_X58Y6          LUT4 (Prop_lut4_I3_O)        0.124    26.360 r  nolabel_line114/amplifier/auto_tune/xer[2]_i_2/O
+                         net (fo=1, routed)           0.412    26.772    nolabel_line114/amplifier/buttoAuto/flip/xer_reg[0]
+    SLICE_X59Y5          LUT4 (Prop_lut4_I2_O)        0.124    26.896 r  nolabel_line114/amplifier/buttoAuto/flip/xer[2]_i_1/O
+                         net (fo=1, routed)           0.000    26.896    nolabel_line114/amplifier/auto_tune/q_reg_0
+    SLICE_X59Y5          FDRE                                         r  nolabel_line114/amplifier/auto_tune/xer_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000    10.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.211    12.599    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF
+    SLICE_X59Y15         LUT2 (Prop_lut2_I1_O)        0.100    12.699 r  nolabel_line114/amplifier/auto_tune/xer[4]_i_2/O
+                         net (fo=5, routed)           0.728    13.427    nolabel_line114/amplifier/auto_tune/logic_clk
+    SLICE_X59Y5          FDRE                                         r  nolabel_line114/amplifier/auto_tune/xer_reg[2]/C
+                         clock pessimism              0.070    13.498    
+                         clock uncertainty           -0.035    13.462    
+    SLICE_X59Y5          FDRE (Setup_fdre_C_D)        0.032    13.494    nolabel_line114/amplifier/auto_tune/xer_reg[2]
+  -------------------------------------------------------------------
+                         required time                         13.494    
+                         arrival time                         -26.896    
+  -------------------------------------------------------------------
+                         slack                                -13.402    
+
+Slack (VIOLATED) :        -13.226ns  (required time - arrival time)
+  Source:                 nolabel_line114/amplifier/auto_tune/xer3/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line114/amplifier/auto_tune/xer_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        21.295ns  (logic 12.356ns (58.023%)  route 8.939ns (41.977%))
+  Logic Levels:           28  (CARRY4=14 DSP48E1=1 LUT2=1 LUT3=4 LUT4=2 LUT5=1 LUT6=5)
+  Clock Path Skew:        -1.925ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.187ns = ( 13.187 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.182ns
+    Clock Pessimism Removal (CPR):    0.070ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.967     3.425    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         1.661     5.182    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF_BUFG
+    DSP48_X1Y2           DSP48E1                                      r  nolabel_line114/amplifier/auto_tune/xer3/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y2           DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.388 r  nolabel_line114/amplifier/auto_tune/xer3/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.390    nolabel_line114/amplifier/auto_tune/xer3_n_106
+    DSP48_X1Y3           DSP48E1 (Prop_dsp48e1_PCIN[47]_P[1])
+                                                      1.518    10.908 f  nolabel_line114/amplifier/auto_tune/xer3__0/P[1]
+                         net (fo=39, routed)          1.092    12.000    nolabel_line114/amplifier/auto_tune/xer3__0_n_104
+    SLICE_X59Y5          LUT3 (Prop_lut3_I1_O)        0.124    12.124 r  nolabel_line114/amplifier/auto_tune/xer2__302_i_1/O
+                         net (fo=2, routed)           0.753    12.877    nolabel_line114/amplifier/auto_tune/xer2__302_i_1_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.396    13.273 r  nolabel_line114/amplifier/auto_tune/xer2__302/CO[3]
+                         net (fo=1, routed)           0.000    13.273    nolabel_line114/amplifier/auto_tune/xer2__302_n_0
+    SLICE_X54Y6          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    13.596 r  nolabel_line114/amplifier/auto_tune/xer2__303/O[1]
+                         net (fo=3, routed)           0.810    14.407    nolabel_line114/amplifier/auto_tune/xer2__303_n_6
+    SLICE_X59Y6          LUT3 (Prop_lut3_I2_O)        0.306    14.713 r  nolabel_line114/amplifier/auto_tune/xer2__341_i_2/O
+                         net (fo=1, routed)           0.731    15.443    nolabel_line114/amplifier/auto_tune/xer2__341_i_2_n_0
+    SLICE_X55Y6          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    15.841 r  nolabel_line114/amplifier/auto_tune/xer2__341/CO[3]
+                         net (fo=1, routed)           0.000    15.841    nolabel_line114/amplifier/auto_tune/xer2__341_n_0
+    SLICE_X55Y7          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.063 r  nolabel_line114/amplifier/auto_tune/xer2__342/O[0]
+                         net (fo=3, routed)           0.649    16.712    nolabel_line114/amplifier/auto_tune/xer2__342_n_7
+    SLICE_X48Y6          LUT3 (Prop_lut3_I0_O)        0.299    17.011 r  nolabel_line114/amplifier/auto_tune/xer2__353_i_3/O
+                         net (fo=1, routed)           0.664    17.675    nolabel_line114/amplifier/auto_tune/xer2__353_i_3_n_0
+    SLICE_X51Y6          CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    18.182 r  nolabel_line114/amplifier/auto_tune/xer2__353/CO[3]
+                         net (fo=1, routed)           0.000    18.182    nolabel_line114/amplifier/auto_tune/xer2__353_n_0
+    SLICE_X51Y7          CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    18.495 r  nolabel_line114/amplifier/auto_tune/xer2__354/O[3]
+                         net (fo=6, routed)           0.787    19.282    nolabel_line114/amplifier/auto_tune/xer2__354_n_4
+    SLICE_X49Y5          LUT2 (Prop_lut2_I0_O)        0.306    19.588 r  nolabel_line114/amplifier/auto_tune/xer2__362_i_3/O
+                         net (fo=1, routed)           0.000    19.588    nolabel_line114/amplifier/auto_tune/xer2__362_i_3_n_0
+    SLICE_X49Y5          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.138 r  nolabel_line114/amplifier/auto_tune/xer2__362/CO[3]
+                         net (fo=1, routed)           0.000    20.138    nolabel_line114/amplifier/auto_tune/xer2__362_n_0
+    SLICE_X49Y6          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    20.472 r  nolabel_line114/amplifier/auto_tune/xer2__363/O[1]
+                         net (fo=3, routed)           0.704    21.176    nolabel_line114/amplifier/auto_tune/xer2__363_n_6
+    SLICE_X50Y5          LUT4 (Prop_lut4_I1_O)        0.303    21.479 r  nolabel_line114/amplifier/auto_tune/xer2__371_i_5/O
+                         net (fo=1, routed)           0.000    21.479    nolabel_line114/amplifier/auto_tune/xer2__371_i_5_n_0
+    SLICE_X50Y5          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    21.855 r  nolabel_line114/amplifier/auto_tune/xer2__371/CO[3]
+                         net (fo=1, routed)           0.000    21.855    nolabel_line114/amplifier/auto_tune/xer2__371_n_0
+    SLICE_X50Y6          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    21.972 r  nolabel_line114/amplifier/auto_tune/xer2__372/CO[3]
+                         net (fo=1, routed)           0.000    21.972    nolabel_line114/amplifier/auto_tune/xer2__372_n_0
+    SLICE_X50Y7          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.089 r  nolabel_line114/amplifier/auto_tune/xer2__373/CO[3]
+                         net (fo=1, routed)           0.000    22.089    nolabel_line114/amplifier/auto_tune/xer2__373_n_0
+    SLICE_X50Y8          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.206 r  nolabel_line114/amplifier/auto_tune/xer2__374/CO[3]
+                         net (fo=1, routed)           0.000    22.206    nolabel_line114/amplifier/auto_tune/xer2__374_n_0
+    SLICE_X50Y9          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.323 r  nolabel_line114/amplifier/auto_tune/xer2__375/CO[3]
+                         net (fo=1, routed)           0.000    22.323    nolabel_line114/amplifier/auto_tune/xer2__375_n_0
+    SLICE_X50Y10         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.229    22.552 f  nolabel_line114/amplifier/auto_tune/xer2__376/CO[2]
+                         net (fo=8, routed)           0.359    22.911    nolabel_line114/amplifier/auto_tune/xer2__376_n_1
+    SLICE_X52Y10         LUT3 (Prop_lut3_I0_O)        0.310    23.221 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_9/O
+                         net (fo=6, routed)           0.605    23.826    nolabel_line114/amplifier/auto_tune/xer[1]_i_9_n_0
+    SLICE_X59Y10         LUT5 (Prop_lut5_I3_O)        0.124    23.950 f  nolabel_line114/amplifier/auto_tune/xer[1]_i_10/O
+                         net (fo=1, routed)           0.302    24.253    nolabel_line114/amplifier/auto_tune/xer[1]_i_10_n_0
+    SLICE_X58Y8          LUT6 (Prop_lut6_I5_O)        0.124    24.377 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_6/O
+                         net (fo=1, routed)           0.688    25.064    nolabel_line114/amplifier/auto_tune/xer[1]_i_6_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124    25.188 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_2/O
+                         net (fo=5, routed)           0.173    25.361    nolabel_line114/amplifier/auto_tune/xer[1]_i_2_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I0_O)        0.124    25.485 r  nolabel_line114/amplifier/auto_tune/xer[3]_i_6/O
+                         net (fo=1, routed)           0.292    25.778    nolabel_line114/amplifier/auto_tune/xer[3]_i_6_n_0
+    SLICE_X59Y8          LUT6 (Prop_lut6_I5_O)        0.124    25.902 r  nolabel_line114/amplifier/auto_tune/xer[3]_i_3/O
+                         net (fo=5, routed)           0.173    26.075    nolabel_line114/amplifier/auto_tune/xer[3]_i_3_n_0
+    SLICE_X59Y8          LUT6 (Prop_lut6_I0_O)        0.124    26.199 r  nolabel_line114/amplifier/auto_tune/xer[4]_i_3/O
+                         net (fo=1, routed)           0.154    26.353    nolabel_line114/amplifier/buttoAuto/flip/xer_reg[1]
+    SLICE_X59Y8          LUT4 (Prop_lut4_I2_O)        0.124    26.477 r  nolabel_line114/amplifier/buttoAuto/flip/xer[4]_i_1/O
+                         net (fo=1, routed)           0.000    26.477    nolabel_line114/amplifier/auto_tune/q_reg
+    SLICE_X59Y8          FDRE                                         r  nolabel_line114/amplifier/auto_tune/xer_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000    10.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.211    12.599    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF
+    SLICE_X59Y15         LUT2 (Prop_lut2_I1_O)        0.100    12.699 r  nolabel_line114/amplifier/auto_tune/xer[4]_i_2/O
+                         net (fo=5, routed)           0.487    13.187    nolabel_line114/amplifier/auto_tune/logic_clk
+    SLICE_X59Y8          FDRE                                         r  nolabel_line114/amplifier/auto_tune/xer_reg[4]/C
+                         clock pessimism              0.070    13.257    
+                         clock uncertainty           -0.035    13.222    
+    SLICE_X59Y8          FDRE (Setup_fdre_C_D)        0.029    13.251    nolabel_line114/amplifier/auto_tune/xer_reg[4]
+  -------------------------------------------------------------------
+                         required time                         13.251    
+                         arrival time                         -26.477    
+  -------------------------------------------------------------------
+                         slack                                -13.226    
+
+Slack (VIOLATED) :        -13.124ns  (required time - arrival time)
+  Source:                 nolabel_line114/amplifier/auto_tune/xer3/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line114/amplifier/auto_tune/xer_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        21.318ns  (logic 12.232ns (57.379%)  route 9.086ns (42.621%))
+  Logic Levels:           27  (CARRY4=14 DSP48E1=1 LUT2=1 LUT3=4 LUT4=1 LUT5=1 LUT6=5)
+  Clock Path Skew:        -1.802ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.310ns = ( 13.310 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.182ns
+    Clock Pessimism Removal (CPR):    0.070ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.967     3.425    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         1.661     5.182    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF_BUFG
+    DSP48_X1Y2           DSP48E1                                      r  nolabel_line114/amplifier/auto_tune/xer3/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y2           DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.388 r  nolabel_line114/amplifier/auto_tune/xer3/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.390    nolabel_line114/amplifier/auto_tune/xer3_n_106
+    DSP48_X1Y3           DSP48E1 (Prop_dsp48e1_PCIN[47]_P[1])
+                                                      1.518    10.908 f  nolabel_line114/amplifier/auto_tune/xer3__0/P[1]
+                         net (fo=39, routed)          1.092    12.000    nolabel_line114/amplifier/auto_tune/xer3__0_n_104
+    SLICE_X59Y5          LUT3 (Prop_lut3_I1_O)        0.124    12.124 r  nolabel_line114/amplifier/auto_tune/xer2__302_i_1/O
+                         net (fo=2, routed)           0.753    12.877    nolabel_line114/amplifier/auto_tune/xer2__302_i_1_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.396    13.273 r  nolabel_line114/amplifier/auto_tune/xer2__302/CO[3]
+                         net (fo=1, routed)           0.000    13.273    nolabel_line114/amplifier/auto_tune/xer2__302_n_0
+    SLICE_X54Y6          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    13.596 r  nolabel_line114/amplifier/auto_tune/xer2__303/O[1]
+                         net (fo=3, routed)           0.810    14.407    nolabel_line114/amplifier/auto_tune/xer2__303_n_6
+    SLICE_X59Y6          LUT3 (Prop_lut3_I2_O)        0.306    14.713 r  nolabel_line114/amplifier/auto_tune/xer2__341_i_2/O
+                         net (fo=1, routed)           0.731    15.443    nolabel_line114/amplifier/auto_tune/xer2__341_i_2_n_0
+    SLICE_X55Y6          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    15.841 r  nolabel_line114/amplifier/auto_tune/xer2__341/CO[3]
+                         net (fo=1, routed)           0.000    15.841    nolabel_line114/amplifier/auto_tune/xer2__341_n_0
+    SLICE_X55Y7          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.063 r  nolabel_line114/amplifier/auto_tune/xer2__342/O[0]
+                         net (fo=3, routed)           0.649    16.712    nolabel_line114/amplifier/auto_tune/xer2__342_n_7
+    SLICE_X48Y6          LUT3 (Prop_lut3_I0_O)        0.299    17.011 r  nolabel_line114/amplifier/auto_tune/xer2__353_i_3/O
+                         net (fo=1, routed)           0.664    17.675    nolabel_line114/amplifier/auto_tune/xer2__353_i_3_n_0
+    SLICE_X51Y6          CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    18.182 r  nolabel_line114/amplifier/auto_tune/xer2__353/CO[3]
+                         net (fo=1, routed)           0.000    18.182    nolabel_line114/amplifier/auto_tune/xer2__353_n_0
+    SLICE_X51Y7          CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    18.495 r  nolabel_line114/amplifier/auto_tune/xer2__354/O[3]
+                         net (fo=6, routed)           0.787    19.282    nolabel_line114/amplifier/auto_tune/xer2__354_n_4
+    SLICE_X49Y5          LUT2 (Prop_lut2_I0_O)        0.306    19.588 r  nolabel_line114/amplifier/auto_tune/xer2__362_i_3/O
+                         net (fo=1, routed)           0.000    19.588    nolabel_line114/amplifier/auto_tune/xer2__362_i_3_n_0
+    SLICE_X49Y5          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.138 r  nolabel_line114/amplifier/auto_tune/xer2__362/CO[3]
+                         net (fo=1, routed)           0.000    20.138    nolabel_line114/amplifier/auto_tune/xer2__362_n_0
+    SLICE_X49Y6          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    20.472 r  nolabel_line114/amplifier/auto_tune/xer2__363/O[1]
+                         net (fo=3, routed)           0.704    21.176    nolabel_line114/amplifier/auto_tune/xer2__363_n_6
+    SLICE_X50Y5          LUT4 (Prop_lut4_I1_O)        0.303    21.479 r  nolabel_line114/amplifier/auto_tune/xer2__371_i_5/O
+                         net (fo=1, routed)           0.000    21.479    nolabel_line114/amplifier/auto_tune/xer2__371_i_5_n_0
+    SLICE_X50Y5          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    21.855 r  nolabel_line114/amplifier/auto_tune/xer2__371/CO[3]
+                         net (fo=1, routed)           0.000    21.855    nolabel_line114/amplifier/auto_tune/xer2__371_n_0
+    SLICE_X50Y6          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    21.972 r  nolabel_line114/amplifier/auto_tune/xer2__372/CO[3]
+                         net (fo=1, routed)           0.000    21.972    nolabel_line114/amplifier/auto_tune/xer2__372_n_0
+    SLICE_X50Y7          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.089 r  nolabel_line114/amplifier/auto_tune/xer2__373/CO[3]
+                         net (fo=1, routed)           0.000    22.089    nolabel_line114/amplifier/auto_tune/xer2__373_n_0
+    SLICE_X50Y8          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.206 r  nolabel_line114/amplifier/auto_tune/xer2__374/CO[3]
+                         net (fo=1, routed)           0.000    22.206    nolabel_line114/amplifier/auto_tune/xer2__374_n_0
+    SLICE_X50Y9          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.323 r  nolabel_line114/amplifier/auto_tune/xer2__375/CO[3]
+                         net (fo=1, routed)           0.000    22.323    nolabel_line114/amplifier/auto_tune/xer2__375_n_0
+    SLICE_X50Y10         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.229    22.552 f  nolabel_line114/amplifier/auto_tune/xer2__376/CO[2]
+                         net (fo=8, routed)           0.359    22.911    nolabel_line114/amplifier/auto_tune/xer2__376_n_1
+    SLICE_X52Y10         LUT3 (Prop_lut3_I0_O)        0.310    23.221 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_9/O
+                         net (fo=6, routed)           0.605    23.826    nolabel_line114/amplifier/auto_tune/xer[1]_i_9_n_0
+    SLICE_X59Y10         LUT5 (Prop_lut5_I3_O)        0.124    23.950 f  nolabel_line114/amplifier/auto_tune/xer[1]_i_10/O
+                         net (fo=1, routed)           0.302    24.253    nolabel_line114/amplifier/auto_tune/xer[1]_i_10_n_0
+    SLICE_X58Y8          LUT6 (Prop_lut6_I5_O)        0.124    24.377 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_6/O
+                         net (fo=1, routed)           0.688    25.064    nolabel_line114/amplifier/auto_tune/xer[1]_i_6_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124    25.188 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_2/O
+                         net (fo=5, routed)           0.173    25.361    nolabel_line114/amplifier/auto_tune/xer[1]_i_2_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I0_O)        0.124    25.485 r  nolabel_line114/amplifier/auto_tune/xer[3]_i_6/O
+                         net (fo=1, routed)           0.292    25.778    nolabel_line114/amplifier/auto_tune/xer[3]_i_6_n_0
+    SLICE_X59Y8          LUT6 (Prop_lut6_I5_O)        0.124    25.902 r  nolabel_line114/amplifier/auto_tune/xer[3]_i_3/O
+                         net (fo=5, routed)           0.474    26.375    nolabel_line114/amplifier/auto_tune/xer[3]_i_3_n_0
+    SLICE_X59Y6          LUT6 (Prop_lut6_I3_O)        0.124    26.500 r  nolabel_line114/amplifier/auto_tune/xer[3]_i_1/O
+                         net (fo=1, routed)           0.000    26.500    nolabel_line114/amplifier/auto_tune/xer[3]_i_1_n_0
+    SLICE_X59Y6          FDRE                                         r  nolabel_line114/amplifier/auto_tune/xer_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000    10.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.211    12.599    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF
+    SLICE_X59Y15         LUT2 (Prop_lut2_I1_O)        0.100    12.699 r  nolabel_line114/amplifier/auto_tune/xer[4]_i_2/O
+                         net (fo=5, routed)           0.610    13.310    nolabel_line114/amplifier/auto_tune/logic_clk
+    SLICE_X59Y6          FDRE                                         r  nolabel_line114/amplifier/auto_tune/xer_reg[3]/C
+                         clock pessimism              0.070    13.380    
+                         clock uncertainty           -0.035    13.345    
+    SLICE_X59Y6          FDRE (Setup_fdre_C_D)        0.031    13.376    nolabel_line114/amplifier/auto_tune/xer_reg[3]
+  -------------------------------------------------------------------
+                         required time                         13.376    
+                         arrival time                         -26.499    
+  -------------------------------------------------------------------
+                         slack                                -13.124    
+
+Slack (VIOLATED) :        -12.987ns  (required time - arrival time)
+  Source:                 nolabel_line114/amplifier/auto_tune/xer3/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line114/amplifier/auto_tune/xer_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        21.176ns  (logic 12.232ns (57.764%)  route 8.944ns (42.236%))
+  Logic Levels:           27  (CARRY4=14 DSP48E1=1 LUT2=1 LUT3=4 LUT4=1 LUT5=1 LUT6=5)
+  Clock Path Skew:        -1.807ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.304ns = ( 13.304 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.182ns
+    Clock Pessimism Removal (CPR):    0.070ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.967     3.425    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         1.661     5.182    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF_BUFG
+    DSP48_X1Y2           DSP48E1                                      r  nolabel_line114/amplifier/auto_tune/xer3/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y2           DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.388 r  nolabel_line114/amplifier/auto_tune/xer3/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.390    nolabel_line114/amplifier/auto_tune/xer3_n_106
+    DSP48_X1Y3           DSP48E1 (Prop_dsp48e1_PCIN[47]_P[1])
+                                                      1.518    10.908 f  nolabel_line114/amplifier/auto_tune/xer3__0/P[1]
+                         net (fo=39, routed)          1.092    12.000    nolabel_line114/amplifier/auto_tune/xer3__0_n_104
+    SLICE_X59Y5          LUT3 (Prop_lut3_I1_O)        0.124    12.124 r  nolabel_line114/amplifier/auto_tune/xer2__302_i_1/O
+                         net (fo=2, routed)           0.753    12.877    nolabel_line114/amplifier/auto_tune/xer2__302_i_1_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.396    13.273 r  nolabel_line114/amplifier/auto_tune/xer2__302/CO[3]
+                         net (fo=1, routed)           0.000    13.273    nolabel_line114/amplifier/auto_tune/xer2__302_n_0
+    SLICE_X54Y6          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    13.596 r  nolabel_line114/amplifier/auto_tune/xer2__303/O[1]
+                         net (fo=3, routed)           0.810    14.407    nolabel_line114/amplifier/auto_tune/xer2__303_n_6
+    SLICE_X59Y6          LUT3 (Prop_lut3_I2_O)        0.306    14.713 r  nolabel_line114/amplifier/auto_tune/xer2__341_i_2/O
+                         net (fo=1, routed)           0.731    15.443    nolabel_line114/amplifier/auto_tune/xer2__341_i_2_n_0
+    SLICE_X55Y6          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    15.841 r  nolabel_line114/amplifier/auto_tune/xer2__341/CO[3]
+                         net (fo=1, routed)           0.000    15.841    nolabel_line114/amplifier/auto_tune/xer2__341_n_0
+    SLICE_X55Y7          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.063 r  nolabel_line114/amplifier/auto_tune/xer2__342/O[0]
+                         net (fo=3, routed)           0.649    16.712    nolabel_line114/amplifier/auto_tune/xer2__342_n_7
+    SLICE_X48Y6          LUT3 (Prop_lut3_I0_O)        0.299    17.011 r  nolabel_line114/amplifier/auto_tune/xer2__353_i_3/O
+                         net (fo=1, routed)           0.664    17.675    nolabel_line114/amplifier/auto_tune/xer2__353_i_3_n_0
+    SLICE_X51Y6          CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    18.182 r  nolabel_line114/amplifier/auto_tune/xer2__353/CO[3]
+                         net (fo=1, routed)           0.000    18.182    nolabel_line114/amplifier/auto_tune/xer2__353_n_0
+    SLICE_X51Y7          CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    18.495 r  nolabel_line114/amplifier/auto_tune/xer2__354/O[3]
+                         net (fo=6, routed)           0.787    19.282    nolabel_line114/amplifier/auto_tune/xer2__354_n_4
+    SLICE_X49Y5          LUT2 (Prop_lut2_I0_O)        0.306    19.588 r  nolabel_line114/amplifier/auto_tune/xer2__362_i_3/O
+                         net (fo=1, routed)           0.000    19.588    nolabel_line114/amplifier/auto_tune/xer2__362_i_3_n_0
+    SLICE_X49Y5          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.138 r  nolabel_line114/amplifier/auto_tune/xer2__362/CO[3]
+                         net (fo=1, routed)           0.000    20.138    nolabel_line114/amplifier/auto_tune/xer2__362_n_0
+    SLICE_X49Y6          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    20.472 r  nolabel_line114/amplifier/auto_tune/xer2__363/O[1]
+                         net (fo=3, routed)           0.704    21.176    nolabel_line114/amplifier/auto_tune/xer2__363_n_6
+    SLICE_X50Y5          LUT4 (Prop_lut4_I1_O)        0.303    21.479 r  nolabel_line114/amplifier/auto_tune/xer2__371_i_5/O
+                         net (fo=1, routed)           0.000    21.479    nolabel_line114/amplifier/auto_tune/xer2__371_i_5_n_0
+    SLICE_X50Y5          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    21.855 r  nolabel_line114/amplifier/auto_tune/xer2__371/CO[3]
+                         net (fo=1, routed)           0.000    21.855    nolabel_line114/amplifier/auto_tune/xer2__371_n_0
+    SLICE_X50Y6          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    21.972 r  nolabel_line114/amplifier/auto_tune/xer2__372/CO[3]
+                         net (fo=1, routed)           0.000    21.972    nolabel_line114/amplifier/auto_tune/xer2__372_n_0
+    SLICE_X50Y7          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.089 r  nolabel_line114/amplifier/auto_tune/xer2__373/CO[3]
+                         net (fo=1, routed)           0.000    22.089    nolabel_line114/amplifier/auto_tune/xer2__373_n_0
+    SLICE_X50Y8          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.206 r  nolabel_line114/amplifier/auto_tune/xer2__374/CO[3]
+                         net (fo=1, routed)           0.000    22.206    nolabel_line114/amplifier/auto_tune/xer2__374_n_0
+    SLICE_X50Y9          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.323 r  nolabel_line114/amplifier/auto_tune/xer2__375/CO[3]
+                         net (fo=1, routed)           0.000    22.323    nolabel_line114/amplifier/auto_tune/xer2__375_n_0
+    SLICE_X50Y10         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.229    22.552 f  nolabel_line114/amplifier/auto_tune/xer2__376/CO[2]
+                         net (fo=8, routed)           0.359    22.911    nolabel_line114/amplifier/auto_tune/xer2__376_n_1
+    SLICE_X52Y10         LUT3 (Prop_lut3_I0_O)        0.310    23.221 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_9/O
+                         net (fo=6, routed)           0.605    23.826    nolabel_line114/amplifier/auto_tune/xer[1]_i_9_n_0
+    SLICE_X59Y10         LUT5 (Prop_lut5_I3_O)        0.124    23.950 f  nolabel_line114/amplifier/auto_tune/xer[1]_i_10/O
+                         net (fo=1, routed)           0.302    24.253    nolabel_line114/amplifier/auto_tune/xer[1]_i_10_n_0
+    SLICE_X58Y8          LUT6 (Prop_lut6_I5_O)        0.124    24.377 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_6/O
+                         net (fo=1, routed)           0.688    25.064    nolabel_line114/amplifier/auto_tune/xer[1]_i_6_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124    25.188 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_2/O
+                         net (fo=5, routed)           0.173    25.361    nolabel_line114/amplifier/auto_tune/xer[1]_i_2_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I0_O)        0.124    25.485 r  nolabel_line114/amplifier/auto_tune/xer[3]_i_6/O
+                         net (fo=1, routed)           0.292    25.778    nolabel_line114/amplifier/auto_tune/xer[3]_i_6_n_0
+    SLICE_X59Y8          LUT6 (Prop_lut6_I5_O)        0.124    25.902 r  nolabel_line114/amplifier/auto_tune/xer[3]_i_3/O
+                         net (fo=5, routed)           0.332    26.234    nolabel_line114/amplifier/auto_tune/xer[3]_i_3_n_0
+    SLICE_X58Y7          LUT6 (Prop_lut6_I0_O)        0.124    26.358 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_1/O
+                         net (fo=1, routed)           0.000    26.358    nolabel_line114/amplifier/auto_tune/xer[1]_i_1_n_0
+    SLICE_X58Y7          FDRE                                         r  nolabel_line114/amplifier/auto_tune/xer_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000    10.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.211    12.599    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF
+    SLICE_X59Y15         LUT2 (Prop_lut2_I1_O)        0.100    12.699 r  nolabel_line114/amplifier/auto_tune/xer[4]_i_2/O
+                         net (fo=5, routed)           0.605    13.304    nolabel_line114/amplifier/auto_tune/logic_clk
+    SLICE_X58Y7          FDRE                                         r  nolabel_line114/amplifier/auto_tune/xer_reg[1]/C
+                         clock pessimism              0.070    13.375    
+                         clock uncertainty           -0.035    13.339    
+    SLICE_X58Y7          FDRE (Setup_fdre_C_D)        0.031    13.370    nolabel_line114/amplifier/auto_tune/xer_reg[1]
+  -------------------------------------------------------------------
+                         required time                         13.370    
+                         arrival time                         -26.358    
+  -------------------------------------------------------------------
+                         slack                                -12.987    
+
+Slack (VIOLATED) :        -12.975ns  (required time - arrival time)
+  Source:                 nolabel_line114/amplifier/auto_tune/xer3/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line114/amplifier/auto_tune/xer_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        21.169ns  (logic 12.232ns (57.782%)  route 8.937ns (42.218%))
+  Logic Levels:           27  (CARRY4=14 DSP48E1=1 LUT2=1 LUT3=4 LUT4=2 LUT5=1 LUT6=4)
+  Clock Path Skew:        -1.802ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.310ns = ( 13.310 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.182ns
+    Clock Pessimism Removal (CPR):    0.070ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.967     3.425    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         1.661     5.182    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF_BUFG
+    DSP48_X1Y2           DSP48E1                                      r  nolabel_line114/amplifier/auto_tune/xer3/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y2           DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.388 r  nolabel_line114/amplifier/auto_tune/xer3/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.390    nolabel_line114/amplifier/auto_tune/xer3_n_106
+    DSP48_X1Y3           DSP48E1 (Prop_dsp48e1_PCIN[47]_P[1])
+                                                      1.518    10.908 f  nolabel_line114/amplifier/auto_tune/xer3__0/P[1]
+                         net (fo=39, routed)          1.092    12.000    nolabel_line114/amplifier/auto_tune/xer3__0_n_104
+    SLICE_X59Y5          LUT3 (Prop_lut3_I1_O)        0.124    12.124 r  nolabel_line114/amplifier/auto_tune/xer2__302_i_1/O
+                         net (fo=2, routed)           0.753    12.877    nolabel_line114/amplifier/auto_tune/xer2__302_i_1_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.396    13.273 r  nolabel_line114/amplifier/auto_tune/xer2__302/CO[3]
+                         net (fo=1, routed)           0.000    13.273    nolabel_line114/amplifier/auto_tune/xer2__302_n_0
+    SLICE_X54Y6          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    13.596 r  nolabel_line114/amplifier/auto_tune/xer2__303/O[1]
+                         net (fo=3, routed)           0.810    14.407    nolabel_line114/amplifier/auto_tune/xer2__303_n_6
+    SLICE_X59Y6          LUT3 (Prop_lut3_I2_O)        0.306    14.713 r  nolabel_line114/amplifier/auto_tune/xer2__341_i_2/O
+                         net (fo=1, routed)           0.731    15.443    nolabel_line114/amplifier/auto_tune/xer2__341_i_2_n_0
+    SLICE_X55Y6          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    15.841 r  nolabel_line114/amplifier/auto_tune/xer2__341/CO[3]
+                         net (fo=1, routed)           0.000    15.841    nolabel_line114/amplifier/auto_tune/xer2__341_n_0
+    SLICE_X55Y7          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    16.063 r  nolabel_line114/amplifier/auto_tune/xer2__342/O[0]
+                         net (fo=3, routed)           0.649    16.712    nolabel_line114/amplifier/auto_tune/xer2__342_n_7
+    SLICE_X48Y6          LUT3 (Prop_lut3_I0_O)        0.299    17.011 r  nolabel_line114/amplifier/auto_tune/xer2__353_i_3/O
+                         net (fo=1, routed)           0.664    17.675    nolabel_line114/amplifier/auto_tune/xer2__353_i_3_n_0
+    SLICE_X51Y6          CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    18.182 r  nolabel_line114/amplifier/auto_tune/xer2__353/CO[3]
+                         net (fo=1, routed)           0.000    18.182    nolabel_line114/amplifier/auto_tune/xer2__353_n_0
+    SLICE_X51Y7          CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    18.495 r  nolabel_line114/amplifier/auto_tune/xer2__354/O[3]
+                         net (fo=6, routed)           0.787    19.282    nolabel_line114/amplifier/auto_tune/xer2__354_n_4
+    SLICE_X49Y5          LUT2 (Prop_lut2_I0_O)        0.306    19.588 r  nolabel_line114/amplifier/auto_tune/xer2__362_i_3/O
+                         net (fo=1, routed)           0.000    19.588    nolabel_line114/amplifier/auto_tune/xer2__362_i_3_n_0
+    SLICE_X49Y5          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    20.138 r  nolabel_line114/amplifier/auto_tune/xer2__362/CO[3]
+                         net (fo=1, routed)           0.000    20.138    nolabel_line114/amplifier/auto_tune/xer2__362_n_0
+    SLICE_X49Y6          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    20.472 r  nolabel_line114/amplifier/auto_tune/xer2__363/O[1]
+                         net (fo=3, routed)           0.704    21.176    nolabel_line114/amplifier/auto_tune/xer2__363_n_6
+    SLICE_X50Y5          LUT4 (Prop_lut4_I1_O)        0.303    21.479 r  nolabel_line114/amplifier/auto_tune/xer2__371_i_5/O
+                         net (fo=1, routed)           0.000    21.479    nolabel_line114/amplifier/auto_tune/xer2__371_i_5_n_0
+    SLICE_X50Y5          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    21.855 r  nolabel_line114/amplifier/auto_tune/xer2__371/CO[3]
+                         net (fo=1, routed)           0.000    21.855    nolabel_line114/amplifier/auto_tune/xer2__371_n_0
+    SLICE_X50Y6          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    21.972 r  nolabel_line114/amplifier/auto_tune/xer2__372/CO[3]
+                         net (fo=1, routed)           0.000    21.972    nolabel_line114/amplifier/auto_tune/xer2__372_n_0
+    SLICE_X50Y7          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.089 r  nolabel_line114/amplifier/auto_tune/xer2__373/CO[3]
+                         net (fo=1, routed)           0.000    22.089    nolabel_line114/amplifier/auto_tune/xer2__373_n_0
+    SLICE_X50Y8          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.206 r  nolabel_line114/amplifier/auto_tune/xer2__374/CO[3]
+                         net (fo=1, routed)           0.000    22.206    nolabel_line114/amplifier/auto_tune/xer2__374_n_0
+    SLICE_X50Y9          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    22.323 r  nolabel_line114/amplifier/auto_tune/xer2__375/CO[3]
+                         net (fo=1, routed)           0.000    22.323    nolabel_line114/amplifier/auto_tune/xer2__375_n_0
+    SLICE_X50Y10         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.229    22.552 f  nolabel_line114/amplifier/auto_tune/xer2__376/CO[2]
+                         net (fo=8, routed)           0.359    22.911    nolabel_line114/amplifier/auto_tune/xer2__376_n_1
+    SLICE_X52Y10         LUT3 (Prop_lut3_I0_O)        0.310    23.221 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_9/O
+                         net (fo=6, routed)           0.605    23.826    nolabel_line114/amplifier/auto_tune/xer[1]_i_9_n_0
+    SLICE_X59Y10         LUT5 (Prop_lut5_I3_O)        0.124    23.950 f  nolabel_line114/amplifier/auto_tune/xer[1]_i_10/O
+                         net (fo=1, routed)           0.302    24.253    nolabel_line114/amplifier/auto_tune/xer[1]_i_10_n_0
+    SLICE_X58Y8          LUT6 (Prop_lut6_I5_O)        0.124    24.377 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_6/O
+                         net (fo=1, routed)           0.688    25.064    nolabel_line114/amplifier/auto_tune/xer[1]_i_6_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124    25.188 r  nolabel_line114/amplifier/auto_tune/xer[1]_i_2/O
+                         net (fo=5, routed)           0.173    25.361    nolabel_line114/amplifier/auto_tune/xer[1]_i_2_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I0_O)        0.124    25.485 r  nolabel_line114/amplifier/auto_tune/xer[3]_i_6/O
+                         net (fo=1, routed)           0.292    25.778    nolabel_line114/amplifier/auto_tune/xer[3]_i_6_n_0
+    SLICE_X59Y8          LUT6 (Prop_lut6_I5_O)        0.124    25.902 r  nolabel_line114/amplifier/auto_tune/xer[3]_i_3/O
+                         net (fo=5, routed)           0.325    26.227    nolabel_line114/amplifier/auto_tune/xer[3]_i_3_n_0
+    SLICE_X59Y6          LUT4 (Prop_lut4_I0_O)        0.124    26.351 r  nolabel_line114/amplifier/auto_tune/xer[0]_i_1/O
+                         net (fo=1, routed)           0.000    26.351    nolabel_line114/amplifier/auto_tune/xer[0]_i_1_n_0
+    SLICE_X59Y6          FDRE                                         r  nolabel_line114/amplifier/auto_tune/xer_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000    10.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.211    12.599    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF
+    SLICE_X59Y15         LUT2 (Prop_lut2_I1_O)        0.100    12.699 r  nolabel_line114/amplifier/auto_tune/xer[4]_i_2/O
+                         net (fo=5, routed)           0.610    13.310    nolabel_line114/amplifier/auto_tune/logic_clk
+    SLICE_X59Y6          FDRE                                         r  nolabel_line114/amplifier/auto_tune/xer_reg[0]/C
+                         clock pessimism              0.070    13.380    
+                         clock uncertainty           -0.035    13.345    
+    SLICE_X59Y6          FDRE (Setup_fdre_C_D)        0.031    13.376    nolabel_line114/amplifier/auto_tune/xer_reg[0]
+  -------------------------------------------------------------------
+                         required time                         13.376    
+                         arrival time                         -26.351    
+  -------------------------------------------------------------------
+                         slack                                -12.975    
+
+Slack (VIOLATED) :        -2.765ns  (required time - arrival time)
+  Source:                 nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line116/mic2_dist/tune_distance/xer_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        12.739ns  (logic 5.166ns (40.553%)  route 7.573ns (59.447%))
+  Logic Levels:           9  (DSP48E1=1 LUT3=1 LUT4=1 LUT6=6)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.411ns = ( 13.411 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.802ns
+    Clock Pessimism Removal (CPR):    0.368ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.529     2.987    nolabel_line116/mic2_dist/tune_distance/basys_clock_IBUF
+    SLICE_X50Y25         LUT2 (Prop_lut2_I1_O)        0.124     3.111 r  nolabel_line116/mic2_dist/tune_distance/xer[4]_i_2__1/O
+                         net (fo=5, routed)           0.691     3.802    nolabel_line116/mic2_dist/tune_distance/logic_clk
+    SLICE_X54Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y24         FDRE (Prop_fdre_C_Q)         0.518     4.320 r  nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/Q
+                         net (fo=4, routed)           0.712     5.032    nolabel_line116/mic2_dist/tune_distance/xer_reg[4]
+    DSP48_X1Y10          DSP48E1 (Prop_dsp48e1_B[4]_P[16])
+                                                      3.656     8.688 r  nolabel_line116/mic2_dist/tune_distance/xer3/P[16]
+                         net (fo=8, routed)           1.350    10.039    nolabel_line116/mic2_dist/tune_distance/xer3_n_89
+    SLICE_X54Y25         LUT6 (Prop_lut6_I3_O)        0.124    10.163 r  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[10]_i_1__0/O
+                         net (fo=7, routed)           0.683    10.846    nolabel_line116/mic2_dist/tune_distance/D[9]
+    SLICE_X54Y25         LUT6 (Prop_lut6_I0_O)        0.124    10.970 r  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[8]_i_1__0/O
+                         net (fo=7, routed)           0.795    11.765    nolabel_line116/mic2_dist/tune_distance/D[7]
+    SLICE_X57Y27         LUT6 (Prop_lut6_I4_O)        0.124    11.889 r  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[4]_i_2__0/O
+                         net (fo=3, routed)           1.008    12.897    nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[4]_i_2__0_n_0
+    SLICE_X55Y25         LUT6 (Prop_lut6_I3_O)        0.124    13.021 f  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[4]_i_1__0/O
+                         net (fo=5, routed)           0.859    13.880    nolabel_line116/mic2_dist/tune_distance/D[3]
+    SLICE_X57Y26         LUT3 (Prop_lut3_I2_O)        0.124    14.004 r  nolabel_line116/mic2_dist/tune_distance/xer[1]_i_5__1/O
+                         net (fo=1, routed)           0.492    14.497    nolabel_line116/mic2_dist/tune_distance/xer[1]_i_5__1_n_0
+    SLICE_X55Y26         LUT6 (Prop_lut6_I2_O)        0.124    14.621 r  nolabel_line116/mic2_dist/tune_distance/xer[1]_i_2__1/O
+                         net (fo=4, routed)           0.907    15.527    nolabel_line116/mic2_dist/tune_distance/sel
+    SLICE_X54Y24         LUT6 (Prop_lut6_I1_O)        0.124    15.651 r  nolabel_line116/mic2_dist/tune_distance/xer[4]_i_5__0/O
+                         net (fo=5, routed)           0.765    16.417    nolabel_line116/mic2_dist/tune_distance/buttonUP/flips/xer0
+    SLICE_X55Y24         LUT4 (Prop_lut4_I1_O)        0.124    16.541 r  nolabel_line116/mic2_dist/tune_distance/buttonUP/flips/xer[0]_i_1__1/O
+                         net (fo=1, routed)           0.000    16.541    nolabel_line116/mic2_dist/tune_distance/buttonUP_n_2
+    SLICE_X55Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000    10.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.323    12.711    nolabel_line116/mic2_dist/tune_distance/basys_clock_IBUF
+    SLICE_X50Y25         LUT2 (Prop_lut2_I1_O)        0.100    12.811 r  nolabel_line116/mic2_dist/tune_distance/xer[4]_i_2__1/O
+                         net (fo=5, routed)           0.601    13.411    nolabel_line116/mic2_dist/tune_distance/logic_clk
+    SLICE_X55Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[0]/C
+                         clock pessimism              0.368    13.780    
+                         clock uncertainty           -0.035    13.744    
+    SLICE_X55Y24         FDRE (Setup_fdre_C_D)        0.031    13.775    nolabel_line116/mic2_dist/tune_distance/xer_reg[0]
+  -------------------------------------------------------------------
+                         required time                         13.775    
+                         arrival time                         -16.541    
+  -------------------------------------------------------------------
+                         slack                                 -2.765    
+
+Slack (VIOLATED) :        -2.759ns  (required time - arrival time)
+  Source:                 nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line116/mic2_dist/tune_distance/xer_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        12.734ns  (logic 5.166ns (40.569%)  route 7.568ns (59.431%))
+  Logic Levels:           9  (DSP48E1=1 LUT3=1 LUT6=7)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.411ns = ( 13.411 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.802ns
+    Clock Pessimism Removal (CPR):    0.368ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.529     2.987    nolabel_line116/mic2_dist/tune_distance/basys_clock_IBUF
+    SLICE_X50Y25         LUT2 (Prop_lut2_I1_O)        0.124     3.111 r  nolabel_line116/mic2_dist/tune_distance/xer[4]_i_2__1/O
+                         net (fo=5, routed)           0.691     3.802    nolabel_line116/mic2_dist/tune_distance/logic_clk
+    SLICE_X54Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y24         FDRE (Prop_fdre_C_Q)         0.518     4.320 r  nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/Q
+                         net (fo=4, routed)           0.712     5.032    nolabel_line116/mic2_dist/tune_distance/xer_reg[4]
+    DSP48_X1Y10          DSP48E1 (Prop_dsp48e1_B[4]_P[16])
+                                                      3.656     8.688 r  nolabel_line116/mic2_dist/tune_distance/xer3/P[16]
+                         net (fo=8, routed)           1.350    10.039    nolabel_line116/mic2_dist/tune_distance/xer3_n_89
+    SLICE_X54Y25         LUT6 (Prop_lut6_I3_O)        0.124    10.163 r  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[10]_i_1__0/O
+                         net (fo=7, routed)           0.683    10.846    nolabel_line116/mic2_dist/tune_distance/D[9]
+    SLICE_X54Y25         LUT6 (Prop_lut6_I0_O)        0.124    10.970 r  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[8]_i_1__0/O
+                         net (fo=7, routed)           0.795    11.765    nolabel_line116/mic2_dist/tune_distance/D[7]
+    SLICE_X57Y27         LUT6 (Prop_lut6_I4_O)        0.124    11.889 r  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[4]_i_2__0/O
+                         net (fo=3, routed)           1.008    12.897    nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[4]_i_2__0_n_0
+    SLICE_X55Y25         LUT6 (Prop_lut6_I3_O)        0.124    13.021 f  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[4]_i_1__0/O
+                         net (fo=5, routed)           0.859    13.880    nolabel_line116/mic2_dist/tune_distance/D[3]
+    SLICE_X57Y26         LUT3 (Prop_lut3_I2_O)        0.124    14.004 r  nolabel_line116/mic2_dist/tune_distance/xer[1]_i_5__1/O
+                         net (fo=1, routed)           0.492    14.497    nolabel_line116/mic2_dist/tune_distance/xer[1]_i_5__1_n_0
+    SLICE_X55Y26         LUT6 (Prop_lut6_I2_O)        0.124    14.621 r  nolabel_line116/mic2_dist/tune_distance/xer[1]_i_2__1/O
+                         net (fo=4, routed)           0.907    15.527    nolabel_line116/mic2_dist/tune_distance/sel
+    SLICE_X54Y24         LUT6 (Prop_lut6_I1_O)        0.124    15.651 r  nolabel_line116/mic2_dist/tune_distance/xer[4]_i_5__0/O
+                         net (fo=5, routed)           0.760    16.412    nolabel_line116/mic2_dist/tune_distance/buttonUP/flips/xer0
+    SLICE_X55Y24         LUT6 (Prop_lut6_I5_O)        0.124    16.536 r  nolabel_line116/mic2_dist/tune_distance/buttonUP/flips/xer[1]_i_1__1/O
+                         net (fo=1, routed)           0.000    16.536    nolabel_line116/mic2_dist/tune_distance/buttonUP_n_6
+    SLICE_X55Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000    10.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.323    12.711    nolabel_line116/mic2_dist/tune_distance/basys_clock_IBUF
+    SLICE_X50Y25         LUT2 (Prop_lut2_I1_O)        0.100    12.811 r  nolabel_line116/mic2_dist/tune_distance/xer[4]_i_2__1/O
+                         net (fo=5, routed)           0.601    13.411    nolabel_line116/mic2_dist/tune_distance/logic_clk
+    SLICE_X55Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[1]/C
+                         clock pessimism              0.368    13.780    
+                         clock uncertainty           -0.035    13.744    
+    SLICE_X55Y24         FDRE (Setup_fdre_C_D)        0.032    13.776    nolabel_line116/mic2_dist/tune_distance/xer_reg[1]
+  -------------------------------------------------------------------
+                         required time                         13.776    
+                         arrival time                         -16.536    
+  -------------------------------------------------------------------
+                         slack                                 -2.759    
+
+Slack (VIOLATED) :        -2.681ns  (required time - arrival time)
+  Source:                 nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line116/mic2_dist/tune_distance/xer_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        12.652ns  (logic 5.166ns (40.830%)  route 7.486ns (59.170%))
+  Logic Levels:           9  (DSP48E1=1 LUT3=1 LUT6=7)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.411ns = ( 13.411 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.802ns
+    Clock Pessimism Removal (CPR):    0.368ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.529     2.987    nolabel_line116/mic2_dist/tune_distance/basys_clock_IBUF
+    SLICE_X50Y25         LUT2 (Prop_lut2_I1_O)        0.124     3.111 r  nolabel_line116/mic2_dist/tune_distance/xer[4]_i_2__1/O
+                         net (fo=5, routed)           0.691     3.802    nolabel_line116/mic2_dist/tune_distance/logic_clk
+    SLICE_X54Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y24         FDRE (Prop_fdre_C_Q)         0.518     4.320 r  nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/Q
+                         net (fo=4, routed)           0.712     5.032    nolabel_line116/mic2_dist/tune_distance/xer_reg[4]
+    DSP48_X1Y10          DSP48E1 (Prop_dsp48e1_B[4]_P[16])
+                                                      3.656     8.688 r  nolabel_line116/mic2_dist/tune_distance/xer3/P[16]
+                         net (fo=8, routed)           1.350    10.039    nolabel_line116/mic2_dist/tune_distance/xer3_n_89
+    SLICE_X54Y25         LUT6 (Prop_lut6_I3_O)        0.124    10.163 r  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[10]_i_1__0/O
+                         net (fo=7, routed)           0.683    10.846    nolabel_line116/mic2_dist/tune_distance/D[9]
+    SLICE_X54Y25         LUT6 (Prop_lut6_I0_O)        0.124    10.970 r  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[8]_i_1__0/O
+                         net (fo=7, routed)           0.795    11.765    nolabel_line116/mic2_dist/tune_distance/D[7]
+    SLICE_X57Y27         LUT6 (Prop_lut6_I4_O)        0.124    11.889 r  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[4]_i_2__0/O
+                         net (fo=3, routed)           1.008    12.897    nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[4]_i_2__0_n_0
+    SLICE_X55Y25         LUT6 (Prop_lut6_I3_O)        0.124    13.021 f  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[4]_i_1__0/O
+                         net (fo=5, routed)           0.859    13.880    nolabel_line116/mic2_dist/tune_distance/D[3]
+    SLICE_X57Y26         LUT3 (Prop_lut3_I2_O)        0.124    14.004 r  nolabel_line116/mic2_dist/tune_distance/xer[1]_i_5__1/O
+                         net (fo=1, routed)           0.492    14.497    nolabel_line116/mic2_dist/tune_distance/xer[1]_i_5__1_n_0
+    SLICE_X55Y26         LUT6 (Prop_lut6_I2_O)        0.124    14.621 r  nolabel_line116/mic2_dist/tune_distance/xer[1]_i_2__1/O
+                         net (fo=4, routed)           0.907    15.527    nolabel_line116/mic2_dist/tune_distance/sel
+    SLICE_X54Y24         LUT6 (Prop_lut6_I1_O)        0.124    15.651 r  nolabel_line116/mic2_dist/tune_distance/xer[4]_i_5__0/O
+                         net (fo=5, routed)           0.679    16.330    nolabel_line116/mic2_dist/tune_distance/buttonUP/flips/xer0
+    SLICE_X55Y24         LUT6 (Prop_lut6_I2_O)        0.124    16.454 r  nolabel_line116/mic2_dist/tune_distance/buttonUP/flips/xer[2]_i_1__1/O
+                         net (fo=1, routed)           0.000    16.454    nolabel_line116/mic2_dist/tune_distance/buttonUP_n_3
+    SLICE_X55Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000    10.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.323    12.711    nolabel_line116/mic2_dist/tune_distance/basys_clock_IBUF
+    SLICE_X50Y25         LUT2 (Prop_lut2_I1_O)        0.100    12.811 r  nolabel_line116/mic2_dist/tune_distance/xer[4]_i_2__1/O
+                         net (fo=5, routed)           0.601    13.411    nolabel_line116/mic2_dist/tune_distance/logic_clk
+    SLICE_X55Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[2]/C
+                         clock pessimism              0.368    13.780    
+                         clock uncertainty           -0.035    13.744    
+    SLICE_X55Y24         FDRE (Setup_fdre_C_D)        0.029    13.773    nolabel_line116/mic2_dist/tune_distance/xer_reg[2]
+  -------------------------------------------------------------------
+                         required time                         13.773    
+                         arrival time                         -16.454    
+  -------------------------------------------------------------------
+                         slack                                 -2.681    
+
+Slack (VIOLATED) :        -2.608ns  (required time - arrival time)
+  Source:                 nolabel_line116/mic1_dist/tune_distance/xer_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line116/mic1_dist/tune_distance/xer_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        12.548ns  (logic 5.104ns (40.676%)  route 7.444ns (59.324%))
+  Logic Levels:           9  (DSP48E1=1 LUT6=8)
+  Clock Path Skew:        -0.054ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.228ns = ( 13.228 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.563ns
+    Clock Pessimism Removal (CPR):    0.281ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.261     2.720    nolabel_line116/mic1_dist/tune_distance/basys_clock_IBUF
+    SLICE_X60Y18         LUT2 (Prop_lut2_I1_O)        0.124     2.844 r  nolabel_line116/mic1_dist/tune_distance/xer[4]_i_2__0/O
+                         net (fo=5, routed)           0.719     3.563    nolabel_line116/mic1_dist/tune_distance/logic_clk
+    SLICE_X57Y17         FDRE                                         r  nolabel_line116/mic1_dist/tune_distance/xer_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y17         FDRE (Prop_fdre_C_Q)         0.456     4.019 r  nolabel_line116/mic1_dist/tune_distance/xer_reg[0]/Q
+                         net (fo=7, routed)           0.764     4.783    nolabel_line116/mic1_dist/tune_distance/xer_reg[0]
+    DSP48_X1Y6           DSP48E1 (Prop_dsp48e1_B[0]_P[13])
+                                                      3.656     8.439 r  nolabel_line116/mic1_dist/tune_distance/xer3/P[13]
+                         net (fo=7, routed)           1.146     9.584    nolabel_line116/mic1_dist/tune_distance/xer3_n_92
+    SLICE_X55Y18         LUT6 (Prop_lut6_I4_O)        0.124     9.708 r  nolabel_line116/mic1_dist/tune_distance/average_bit_tuned[10]_i_1/O
+                         net (fo=7, routed)           1.036    10.744    nolabel_line116/mic1_dist/tune_distance/D[9]
+    SLICE_X54Y15         LUT6 (Prop_lut6_I0_O)        0.124    10.868 r  nolabel_line116/mic1_dist/tune_distance/average_bit_tuned[8]_i_1/O
+                         net (fo=7, routed)           0.654    11.522    nolabel_line116/mic1_dist/tune_distance/D[7]
+    SLICE_X55Y16         LUT6 (Prop_lut6_I4_O)        0.124    11.646 r  nolabel_line116/mic1_dist/tune_distance/average_bit_tuned[4]_i_2/O
+                         net (fo=3, routed)           0.981    12.628    nolabel_line116/mic1_dist/tune_distance/average_bit_tuned[4]_i_2_n_0
+    SLICE_X54Y18         LUT6 (Prop_lut6_I1_O)        0.124    12.752 f  nolabel_line116/mic1_dist/tune_distance/average_bit_tuned[2]_i_3/O
+                         net (fo=1, routed)           0.607    13.359    nolabel_line116/mic1_dist/tune_distance/average_bit_tuned[2]_i_3_n_0
+    SLICE_X54Y16         LUT6 (Prop_lut6_I4_O)        0.124    13.483 f  nolabel_line116/mic1_dist/tune_distance/average_bit_tuned[2]_i_1/O
+                         net (fo=3, routed)           0.796    14.279    nolabel_line116/mic1_dist/tune_distance/D[1]
+    SLICE_X57Y18         LUT6 (Prop_lut6_I3_O)        0.124    14.403 r  nolabel_line116/mic1_dist/tune_distance/xer[1]_i_2__0/O
+                         net (fo=4, routed)           0.623    15.026    nolabel_line116/mic1_dist/tune_distance/sel
+    SLICE_X55Y16         LUT6 (Prop_lut6_I1_O)        0.124    15.150 r  nolabel_line116/mic1_dist/tune_distance/xer[4]_i_5/O
+                         net (fo=5, routed)           0.837    15.987    nolabel_line116/mic1_dist/tune_distance/buttonUP/flip/xer0
+    SLICE_X57Y16         LUT6 (Prop_lut6_I4_O)        0.124    16.111 r  nolabel_line116/mic1_dist/tune_distance/buttonUP/flip/xer[4]_i_1__0/O
+                         net (fo=1, routed)           0.000    16.111    nolabel_line116/mic1_dist/tune_distance/buttonUP_n_4
+    SLICE_X57Y16         FDRE                                         r  nolabel_line116/mic1_dist/tune_distance/xer_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000    10.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.074    12.462    nolabel_line116/mic1_dist/tune_distance/basys_clock_IBUF
+    SLICE_X60Y18         LUT2 (Prop_lut2_I1_O)        0.100    12.562 r  nolabel_line116/mic1_dist/tune_distance/xer[4]_i_2__0/O
+                         net (fo=5, routed)           0.665    13.228    nolabel_line116/mic1_dist/tune_distance/logic_clk
+    SLICE_X57Y16         FDRE                                         r  nolabel_line116/mic1_dist/tune_distance/xer_reg[4]/C
+                         clock pessimism              0.281    13.509    
+                         clock uncertainty           -0.035    13.474    
+    SLICE_X57Y16         FDRE (Setup_fdre_C_D)        0.029    13.503    nolabel_line116/mic1_dist/tune_distance/xer_reg[4]
+  -------------------------------------------------------------------
+                         required time                         13.503    
+                         arrival time                         -16.111    
+  -------------------------------------------------------------------
+                         slack                                 -2.608    
+
+Slack (VIOLATED) :        -2.468ns  (required time - arrival time)
+  Source:                 nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line116/mic2_dist/tune_distance/xer_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        12.402ns  (logic 5.166ns (41.653%)  route 7.236ns (58.347%))
+  Logic Levels:           9  (DSP48E1=1 LUT3=1 LUT6=7)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.418ns = ( 13.418 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.802ns
+    Clock Pessimism Removal (CPR):    0.324ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.529     2.987    nolabel_line116/mic2_dist/tune_distance/basys_clock_IBUF
+    SLICE_X50Y25         LUT2 (Prop_lut2_I1_O)        0.124     3.111 r  nolabel_line116/mic2_dist/tune_distance/xer[4]_i_2__1/O
+                         net (fo=5, routed)           0.691     3.802    nolabel_line116/mic2_dist/tune_distance/logic_clk
+    SLICE_X54Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y24         FDRE (Prop_fdre_C_Q)         0.518     4.320 r  nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/Q
+                         net (fo=4, routed)           0.712     5.032    nolabel_line116/mic2_dist/tune_distance/xer_reg[4]
+    DSP48_X1Y10          DSP48E1 (Prop_dsp48e1_B[4]_P[16])
+                                                      3.656     8.688 r  nolabel_line116/mic2_dist/tune_distance/xer3/P[16]
+                         net (fo=8, routed)           1.350    10.039    nolabel_line116/mic2_dist/tune_distance/xer3_n_89
+    SLICE_X54Y25         LUT6 (Prop_lut6_I3_O)        0.124    10.163 r  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[10]_i_1__0/O
+                         net (fo=7, routed)           0.683    10.846    nolabel_line116/mic2_dist/tune_distance/D[9]
+    SLICE_X54Y25         LUT6 (Prop_lut6_I0_O)        0.124    10.970 r  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[8]_i_1__0/O
+                         net (fo=7, routed)           0.795    11.765    nolabel_line116/mic2_dist/tune_distance/D[7]
+    SLICE_X57Y27         LUT6 (Prop_lut6_I4_O)        0.124    11.889 r  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[4]_i_2__0/O
+                         net (fo=3, routed)           1.008    12.897    nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[4]_i_2__0_n_0
+    SLICE_X55Y25         LUT6 (Prop_lut6_I3_O)        0.124    13.021 f  nolabel_line116/mic2_dist/tune_distance/average_bit_tuned[4]_i_1__0/O
+                         net (fo=5, routed)           0.859    13.880    nolabel_line116/mic2_dist/tune_distance/D[3]
+    SLICE_X57Y26         LUT3 (Prop_lut3_I2_O)        0.124    14.004 r  nolabel_line116/mic2_dist/tune_distance/xer[1]_i_5__1/O
+                         net (fo=1, routed)           0.492    14.497    nolabel_line116/mic2_dist/tune_distance/xer[1]_i_5__1_n_0
+    SLICE_X55Y26         LUT6 (Prop_lut6_I2_O)        0.124    14.621 r  nolabel_line116/mic2_dist/tune_distance/xer[1]_i_2__1/O
+                         net (fo=4, routed)           0.907    15.527    nolabel_line116/mic2_dist/tune_distance/sel
+    SLICE_X54Y24         LUT6 (Prop_lut6_I1_O)        0.124    15.651 r  nolabel_line116/mic2_dist/tune_distance/xer[4]_i_5__0/O
+                         net (fo=5, routed)           0.429    16.080    nolabel_line116/mic2_dist/tune_distance/buttonUP/flips/xer0
+    SLICE_X57Y24         LUT6 (Prop_lut6_I3_O)        0.124    16.204 r  nolabel_line116/mic2_dist/tune_distance/buttonUP/flips/xer[3]_i_1__1/O
+                         net (fo=1, routed)           0.000    16.204    nolabel_line116/mic2_dist/tune_distance/buttonUP_n_5
+    SLICE_X57Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000    10.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           1.323    12.711    nolabel_line116/mic2_dist/tune_distance/basys_clock_IBUF
+    SLICE_X50Y25         LUT2 (Prop_lut2_I1_O)        0.100    12.811 r  nolabel_line116/mic2_dist/tune_distance/xer[4]_i_2__1/O
+                         net (fo=5, routed)           0.607    13.418    nolabel_line116/mic2_dist/tune_distance/logic_clk
+    SLICE_X57Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[3]/C
+                         clock pessimism              0.324    13.742    
+                         clock uncertainty           -0.035    13.707    
+    SLICE_X57Y24         FDRE (Setup_fdre_C_D)        0.029    13.736    nolabel_line116/mic2_dist/tune_distance/xer_reg[3]
+  -------------------------------------------------------------------
+                         required time                         13.736    
+                         arrival time                         -16.204    
+  -------------------------------------------------------------------
+                         slack                                 -2.468    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.173ns  (arrival time - required time)
+  Source:                 nolabel_line116/mic1_dist/tune_distance/xer_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line116/mic1_dist/tune_distance/xer_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.335ns  (logic 0.186ns (55.534%)  route 0.149ns (44.466%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.070ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.482ns
+    Source Clock Delay      (SCD):    1.125ns
+    Clock Pessimism Removal (CPR):    0.287ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.517     0.744    nolabel_line116/mic1_dist/tune_distance/basys_clock_IBUF
+    SLICE_X60Y18         LUT2 (Prop_lut2_I1_O)        0.045     0.789 r  nolabel_line116/mic1_dist/tune_distance/xer[4]_i_2__0/O
+                         net (fo=5, routed)           0.336     1.125    nolabel_line116/mic1_dist/tune_distance/logic_clk
+    SLICE_X57Y17         FDRE                                         r  nolabel_line116/mic1_dist/tune_distance/xer_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y17         FDRE (Prop_fdre_C_Q)         0.141     1.266 r  nolabel_line116/mic1_dist/tune_distance/xer_reg[1]/Q
+                         net (fo=7, routed)           0.149     1.415    nolabel_line116/mic1_dist/tune_distance/buttonUP/flips/xer_reg[1]
+    SLICE_X57Y16         LUT6 (Prop_lut6_I1_O)        0.045     1.460 r  nolabel_line116/mic1_dist/tune_distance/buttonUP/flips/xer[2]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.460    nolabel_line116/mic1_dist/tune_distance/buttonUP_n_3
+    SLICE_X57Y16         FDRE                                         r  nolabel_line116/mic1_dist/tune_distance/xer_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.605     1.019    nolabel_line116/mic1_dist/tune_distance/basys_clock_IBUF
+    SLICE_X60Y18         LUT2 (Prop_lut2_I1_O)        0.056     1.075 r  nolabel_line116/mic1_dist/tune_distance/xer[4]_i_2__0/O
+                         net (fo=5, routed)           0.406     1.482    nolabel_line116/mic1_dist/tune_distance/logic_clk
+    SLICE_X57Y16         FDRE                                         r  nolabel_line116/mic1_dist/tune_distance/xer_reg[2]/C
+                         clock pessimism             -0.287     1.195    
+    SLICE_X57Y16         FDRE (Hold_fdre_C_D)         0.092     1.287    nolabel_line116/mic1_dist/tune_distance/xer_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.287    
+                         arrival time                           1.460    
+  -------------------------------------------------------------------
+                         slack                                  0.173    
+
+Slack (MET) :             0.198ns  (arrival time - required time)
+  Source:                 nolabel_line116/mic2_dist/tune_distance/xer_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.331ns  (logic 0.186ns (56.225%)  route 0.145ns (43.775%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.609ns
+    Source Clock Delay      (SCD):    1.273ns
+    Clock Pessimism Removal (CPR):    0.323ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.692     0.918    nolabel_line116/mic2_dist/tune_distance/basys_clock_IBUF
+    SLICE_X50Y25         LUT2 (Prop_lut2_I1_O)        0.045     0.963 r  nolabel_line116/mic2_dist/tune_distance/xer[4]_i_2__1/O
+                         net (fo=5, routed)           0.310     1.273    nolabel_line116/mic2_dist/tune_distance/logic_clk
+    SLICE_X55Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y24         FDRE (Prop_fdre_C_Q)         0.141     1.414 r  nolabel_line116/mic2_dist/tune_distance/xer_reg[2]/Q
+                         net (fo=7, routed)           0.145     1.559    nolabel_line116/mic2_dist/tune_distance/buttonUP/flip/xer_reg[0]
+    SLICE_X54Y24         LUT6 (Prop_lut6_I0_O)        0.045     1.604 r  nolabel_line116/mic2_dist/tune_distance/buttonUP/flip/xer[4]_i_1__1/O
+                         net (fo=1, routed)           0.000     1.604    nolabel_line116/mic2_dist/tune_distance/buttonUP_n_4
+    SLICE_X54Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.787     1.201    nolabel_line116/mic2_dist/tune_distance/basys_clock_IBUF
+    SLICE_X50Y25         LUT2 (Prop_lut2_I1_O)        0.056     1.257 r  nolabel_line116/mic2_dist/tune_distance/xer[4]_i_2__1/O
+                         net (fo=5, routed)           0.352     1.609    nolabel_line116/mic2_dist/tune_distance/logic_clk
+    SLICE_X54Y24         FDRE                                         r  nolabel_line116/mic2_dist/tune_distance/xer_reg[4]/C
+                         clock pessimism             -0.323     1.286    
+    SLICE_X54Y24         FDRE (Hold_fdre_C_D)         0.120     1.406    nolabel_line116/mic2_dist/tune_distance/xer_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.406    
+                         arrival time                           1.604    
+  -------------------------------------------------------------------
+                         slack                                  0.198    
+
+Slack (MET) :             0.209ns  (arrival time - required time)
+  Source:                 nolabel_line114/amplifier/auto_display/seg3_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line114/amplifier/auto_display/seg3_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.300ns  (logic 0.186ns (61.991%)  route 0.114ns (38.009%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.963ns
+    Source Clock Delay      (SCD):    1.449ns
+    Clock Pessimism Removal (CPR):    0.514ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.631     0.858    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         0.566     1.449    nolabel_line114/amplifier/auto_display/basys_clock_IBUF_BUFG
+    SLICE_X49Y3          FDRE                                         r  nolabel_line114/amplifier/auto_display/seg3_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y3          FDRE (Prop_fdre_C_Q)         0.141     1.590 r  nolabel_line114/amplifier/auto_display/seg3_reg[5]/Q
+                         net (fo=2, routed)           0.114     1.704    nolabel_line114/amplifier/auto_display/seg3_reg_n_0_[5]
+    SLICE_X49Y3          LUT6 (Prop_lut6_I2_O)        0.045     1.749 r  nolabel_line114/amplifier/auto_display/seg3[5]_i_1/O
+                         net (fo=1, routed)           0.000     1.749    nolabel_line114/amplifier/auto_display/seg3[5]_i_1_n_0
+    SLICE_X49Y3          FDRE                                         r  nolabel_line114/amplifier/auto_display/seg3_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.685     1.099    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         0.836     1.963    nolabel_line114/amplifier/auto_display/basys_clock_IBUF_BUFG
+    SLICE_X49Y3          FDRE                                         r  nolabel_line114/amplifier/auto_display/seg3_reg[5]/C
+                         clock pessimism             -0.514     1.449    
+    SLICE_X49Y3          FDRE (Hold_fdre_C_D)         0.091     1.540    nolabel_line114/amplifier/auto_display/seg3_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -1.540    
+                         arrival time                           1.749    
+  -------------------------------------------------------------------
+                         slack                                  0.209    
+
+Slack (MET) :             0.212ns  (arrival time - required time)
+  Source:                 nolabel_line114/amplifier/auto_display/seg2_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line114/amplifier/auto_display/seg2_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.303ns  (logic 0.186ns (61.324%)  route 0.117ns (38.676%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.961ns
+    Source Clock Delay      (SCD):    1.447ns
+    Clock Pessimism Removal (CPR):    0.514ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.631     0.858    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         0.564     1.447    nolabel_line114/amplifier/auto_display/basys_clock_IBUF_BUFG
+    SLICE_X47Y3          FDRE                                         r  nolabel_line114/amplifier/auto_display/seg2_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y3          FDRE (Prop_fdre_C_Q)         0.141     1.588 r  nolabel_line114/amplifier/auto_display/seg2_reg[4]/Q
+                         net (fo=2, routed)           0.117     1.705    nolabel_line114/amplifier/auto_display/seg2_reg_n_0_[4]
+    SLICE_X47Y3          LUT6 (Prop_lut6_I2_O)        0.045     1.750 r  nolabel_line114/amplifier/auto_display/seg2[4]_i_1/O
+                         net (fo=1, routed)           0.000     1.750    nolabel_line114/amplifier/auto_display/seg2[4]_i_1_n_0
+    SLICE_X47Y3          FDRE                                         r  nolabel_line114/amplifier/auto_display/seg2_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.685     1.099    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         0.834     1.961    nolabel_line114/amplifier/auto_display/basys_clock_IBUF_BUFG
+    SLICE_X47Y3          FDRE                                         r  nolabel_line114/amplifier/auto_display/seg2_reg[4]/C
+                         clock pessimism             -0.514     1.447    
+    SLICE_X47Y3          FDRE (Hold_fdre_C_D)         0.091     1.538    nolabel_line114/amplifier/auto_display/seg2_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.538    
+                         arrival time                           1.750    
+  -------------------------------------------------------------------
+                         slack                                  0.212    
+
+Slack (MET) :             0.253ns  (arrival time - required time)
+  Source:                 nolabel_line116/mic1_dist/tune_distance/xer_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line116/mic1_dist/tune_distance/xer_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.344ns  (logic 0.186ns (54.033%)  route 0.158ns (45.967%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.482ns
+    Source Clock Delay      (SCD):    1.151ns
+    Clock Pessimism Removal (CPR):    0.331ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.517     0.744    nolabel_line116/mic1_dist/tune_distance/basys_clock_IBUF
+    SLICE_X60Y18         LUT2 (Prop_lut2_I1_O)        0.045     0.789 r  nolabel_line116/mic1_dist/tune_distance/xer[4]_i_2__0/O
+                         net (fo=5, routed)           0.362     1.151    nolabel_line116/mic1_dist/tune_distance/logic_clk
+    SLICE_X57Y16         FDRE                                         r  nolabel_line116/mic1_dist/tune_distance/xer_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y16         FDRE (Prop_fdre_C_Q)         0.141     1.292 r  nolabel_line116/mic1_dist/tune_distance/xer_reg[2]/Q
+                         net (fo=7, routed)           0.158     1.450    nolabel_line116/mic1_dist/tune_distance/buttonUP/flip/xer_reg[0]
+    SLICE_X57Y16         LUT6 (Prop_lut6_I0_O)        0.045     1.495 r  nolabel_line116/mic1_dist/tune_distance/buttonUP/flip/xer[4]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.495    nolabel_line116/mic1_dist/tune_distance/buttonUP_n_4
+    SLICE_X57Y16         FDRE                                         r  nolabel_line116/mic1_dist/tune_distance/xer_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.605     1.019    nolabel_line116/mic1_dist/tune_distance/basys_clock_IBUF
+    SLICE_X60Y18         LUT2 (Prop_lut2_I1_O)        0.056     1.075 r  nolabel_line116/mic1_dist/tune_distance/xer[4]_i_2__0/O
+                         net (fo=5, routed)           0.406     1.482    nolabel_line116/mic1_dist/tune_distance/logic_clk
+    SLICE_X57Y16         FDRE                                         r  nolabel_line116/mic1_dist/tune_distance/xer_reg[4]/C
+                         clock pessimism             -0.331     1.151    
+    SLICE_X57Y16         FDRE (Hold_fdre_C_D)         0.091     1.242    nolabel_line116/mic1_dist/tune_distance/xer_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.242    
+                         arrival time                           1.495    
+  -------------------------------------------------------------------
+                         slack                                  0.253    
+
+Slack (MET) :             0.255ns  (arrival time - required time)
+  Source:                 nolabel_line114/amplifier/auto_tune/average_val_reg[30]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line114/amplifier/auto_tune/average_val_reg[29]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.357ns  (logic 0.252ns (70.554%)  route 0.105ns (29.446%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.960ns
+    Source Clock Delay      (SCD):    1.448ns
+    Clock Pessimism Removal (CPR):    0.512ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.631     0.858    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         0.565     1.448    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF_BUFG
+    SLICE_X57Y12         FDRE                                         r  nolabel_line114/amplifier/auto_tune/average_val_reg[30]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y12         FDRE (Prop_fdre_C_Q)         0.141     1.589 r  nolabel_line114/amplifier/auto_tune/average_val_reg[30]/Q
+                         net (fo=1, routed)           0.105     1.694    nolabel_line114/amplifier/auto_tune/average_val[30]
+    SLICE_X57Y12         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.111     1.805 r  nolabel_line114/amplifier/auto_tune/average_val_reg[30]_i_1/O[2]
+                         net (fo=2, routed)           0.000     1.805    nolabel_line114/amplifier/auto_tune/p_0_in[29]
+    SLICE_X57Y12         FDRE                                         r  nolabel_line114/amplifier/auto_tune/average_val_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.685     1.099    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         0.833     1.960    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF_BUFG
+    SLICE_X57Y12         FDRE                                         r  nolabel_line114/amplifier/auto_tune/average_val_reg[29]/C
+                         clock pessimism             -0.512     1.448    
+    SLICE_X57Y12         FDRE (Hold_fdre_C_D)         0.102     1.550    nolabel_line114/amplifier/auto_tune/average_val_reg[29]
+  -------------------------------------------------------------------
+                         required time                         -1.550    
+                         arrival time                           1.805    
+  -------------------------------------------------------------------
+                         slack                                  0.255    
+
+Slack (MET) :             0.255ns  (arrival time - required time)
+  Source:                 nolabel_line114/amplifier/auto_tune/average_val_reg[22]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line114/amplifier/auto_tune/average_val_reg[21]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.357ns  (logic 0.252ns (70.554%)  route 0.105ns (29.446%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.962ns
+    Source Clock Delay      (SCD):    1.449ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.631     0.858    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         0.566     1.449    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF_BUFG
+    SLICE_X57Y10         FDRE                                         r  nolabel_line114/amplifier/auto_tune/average_val_reg[22]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y10         FDRE (Prop_fdre_C_Q)         0.141     1.590 r  nolabel_line114/amplifier/auto_tune/average_val_reg[22]/Q
+                         net (fo=1, routed)           0.105     1.695    nolabel_line114/amplifier/auto_tune/average_val[22]
+    SLICE_X57Y10         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.111     1.806 r  nolabel_line114/amplifier/auto_tune/average_val_reg[22]_i_1/O[2]
+                         net (fo=2, routed)           0.000     1.806    nolabel_line114/amplifier/auto_tune/p_0_in[21]
+    SLICE_X57Y10         FDRE                                         r  nolabel_line114/amplifier/auto_tune/average_val_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.685     1.099    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         0.835     1.962    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF_BUFG
+    SLICE_X57Y10         FDRE                                         r  nolabel_line114/amplifier/auto_tune/average_val_reg[21]/C
+                         clock pessimism             -0.513     1.449    
+    SLICE_X57Y10         FDRE (Hold_fdre_C_D)         0.102     1.551    nolabel_line114/amplifier/auto_tune/average_val_reg[21]
+  -------------------------------------------------------------------
+                         required time                         -1.551    
+                         arrival time                           1.806    
+  -------------------------------------------------------------------
+                         slack                                  0.255    
+
+Slack (MET) :             0.255ns  (arrival time - required time)
+  Source:                 nolabel_line114/amplifier/auto_tune/average_val_reg[26]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line114/amplifier/auto_tune/average_val_reg[25]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.357ns  (logic 0.252ns (70.554%)  route 0.105ns (29.446%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.962ns
+    Source Clock Delay      (SCD):    1.449ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.631     0.858    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         0.566     1.449    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF_BUFG
+    SLICE_X57Y11         FDRE                                         r  nolabel_line114/amplifier/auto_tune/average_val_reg[26]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y11         FDRE (Prop_fdre_C_Q)         0.141     1.590 r  nolabel_line114/amplifier/auto_tune/average_val_reg[26]/Q
+                         net (fo=1, routed)           0.105     1.695    nolabel_line114/amplifier/auto_tune/average_val[26]
+    SLICE_X57Y11         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.111     1.806 r  nolabel_line114/amplifier/auto_tune/average_val_reg[26]_i_1/O[2]
+                         net (fo=2, routed)           0.000     1.806    nolabel_line114/amplifier/auto_tune/p_0_in[25]
+    SLICE_X57Y11         FDRE                                         r  nolabel_line114/amplifier/auto_tune/average_val_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.685     1.099    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         0.835     1.962    nolabel_line114/amplifier/auto_tune/basys_clock_IBUF_BUFG
+    SLICE_X57Y11         FDRE                                         r  nolabel_line114/amplifier/auto_tune/average_val_reg[25]/C
+                         clock pessimism             -0.513     1.449    
+    SLICE_X57Y11         FDRE (Hold_fdre_C_D)         0.102     1.551    nolabel_line114/amplifier/auto_tune/average_val_reg[25]
+  -------------------------------------------------------------------
+                         required time                         -1.551    
+                         arrival time                           1.806    
+  -------------------------------------------------------------------
+                         slack                                  0.255    
+
+Slack (MET) :             0.261ns  (arrival time - required time)
+  Source:                 nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/counter_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/counter_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.366ns  (logic 0.249ns (67.994%)  route 0.117ns (32.006%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.984ns
+    Source Clock Delay      (SCD):    1.472ns
+    Clock Pessimism Removal (CPR):    0.512ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.631     0.858    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         0.589     1.472    nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/basys_clock_IBUF_BUFG
+    SLICE_X61Y16         FDRE                                         r  nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/counter_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y16         FDRE (Prop_fdre_C_Q)         0.141     1.613 r  nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/counter_reg[31]/Q
+                         net (fo=2, routed)           0.117     1.730    nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/counter_reg[31]
+    SLICE_X61Y16         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     1.838 r  nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/counter_reg[28]_i_1__9/O[3]
+                         net (fo=1, routed)           0.000     1.838    nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/counter_reg[28]_i_1__9_n_4
+    SLICE_X61Y16         FDRE                                         r  nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/counter_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.685     1.099    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         0.857     1.984    nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/basys_clock_IBUF_BUFG
+    SLICE_X61Y16         FDRE                                         r  nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/counter_reg[31]/C
+                         clock pessimism             -0.512     1.472    
+    SLICE_X61Y16         FDRE (Hold_fdre_C_D)         0.105     1.577    nolabel_line114/Aprocess/volume/SevSegOut/sevsegclk/counter_reg[31]
+  -------------------------------------------------------------------
+                         required time                         -1.577    
+                         arrival time                           1.838    
+  -------------------------------------------------------------------
+                         slack                                  0.261    
+
+Slack (MET) :             0.261ns  (arrival time - required time)
+  Source:                 nolabel_line114/rawdata/segdisp/sevsegclk/counter_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            nolabel_line114/rawdata/segdisp/sevsegclk/counter_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.366ns  (logic 0.249ns (67.994%)  route 0.117ns (32.006%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.989ns
+    Source Clock Delay      (SCD):    1.475ns
+    Clock Pessimism Removal (CPR):    0.514ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.631     0.858    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.884 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         0.592     1.475    nolabel_line114/rawdata/segdisp/sevsegclk/basys_clock_IBUF_BUFG
+    SLICE_X65Y12         FDRE                                         r  nolabel_line114/rawdata/segdisp/sevsegclk/counter_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y12         FDRE (Prop_fdre_C_Q)         0.141     1.616 r  nolabel_line114/rawdata/segdisp/sevsegclk/counter_reg[31]/Q
+                         net (fo=2, routed)           0.117     1.733    nolabel_line114/rawdata/segdisp/sevsegclk/counter_reg[31]
+    SLICE_X65Y12         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     1.841 r  nolabel_line114/rawdata/segdisp/sevsegclk/counter_reg[28]_i_1__7/O[3]
+                         net (fo=1, routed)           0.000     1.841    nolabel_line114/rawdata/segdisp/sevsegclk/counter_reg[28]_i_1__7_n_4
+    SLICE_X65Y12         FDRE                                         r  nolabel_line114/rawdata/segdisp/sevsegclk/counter_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  basys_clock (IN)
+                         net (fo=0)                   0.000     0.000    basys_clock
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  basys_clock_IBUF_inst/O
+                         net (fo=4, routed)           0.685     1.099    basys_clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  basys_clock_IBUF_BUFG_inst/O
+                         net (fo=848, routed)         0.862     1.989    nolabel_line114/rawdata/segdisp/sevsegclk/basys_clock_IBUF_BUFG
+    SLICE_X65Y12         FDRE                                         r  nolabel_line114/rawdata/segdisp/sevsegclk/counter_reg[31]/C
+                         clock pessimism             -0.514     1.475    
+    SLICE_X65Y12         FDRE (Hold_fdre_C_D)         0.105     1.580    nolabel_line114/rawdata/segdisp/sevsegclk/counter_reg[31]
+  -------------------------------------------------------------------
+                         required time                         -1.580    
+                         arrival time                           1.841    
+  -------------------------------------------------------------------
+                         slack                                  0.261    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { basys_clock }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y1  basys_clock_IBUF_BUFG_inst/I
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X33Y20   audio/count2_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X57Y17   nolabel_line116/mic1_dist/tune_distance/xer_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X57Y17   nolabel_line116/mic1_dist/tune_distance/xer_reg[1]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X57Y16   nolabel_line116/mic1_dist/tune_distance/xer_reg[2]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X57Y16   nolabel_line116/mic1_dist/tune_distance/xer_reg[3]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X57Y16   nolabel_line116/mic1_dist/tune_distance/xer_reg[4]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X55Y24   nolabel_line116/mic2_dist/tune_distance/xer_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X55Y24   nolabel_line116/mic2_dist/tune_distance/xer_reg[1]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X55Y24   nolabel_line116/mic2_dist/tune_distance/xer_reg[2]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X58Y7    nolabel_line114/amplifier/auto_tune/xer_reg[1]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X57Y16   nolabel_line116/mic1_dist/tune_distance/xer_reg[2]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X57Y16   nolabel_line116/mic1_dist/tune_distance/xer_reg[3]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X57Y16   nolabel_line116/mic1_dist/tune_distance/xer_reg[4]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X59Y5    nolabel_line114/amplifier/auto_tune/xer_reg[2]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X59Y5    nolabel_line114/amplifier/auto_tune/xer_reg[2]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X31Y46   nolabel_line116/mic2_dist/clock_hz/clk_out_reg/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y43   nolabel_line116/mic2_dist/clock_hz/counter_reg[12]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y43   nolabel_line116/mic2_dist/clock_hz/counter_reg[13]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y43   nolabel_line116/mic2_dist/clock_hz/counter_reg[14]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X57Y24   nolabel_line116/mic2_dist/tune_distance/xer_reg[3]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X33Y22   audio/count2_reg[10]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X33Y22   audio/count2_reg[11]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X33Y22   audio/count2_reg[8]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X33Y22   audio/count2_reg[9]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X51Y61   nolabel_line94/count2_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X51Y63   nolabel_line94/count2_reg[10]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X51Y63   nolabel_line94/count2_reg[11]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X51Y61   nolabel_line94/count2_reg[1]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X51Y61   nolabel_line94/count2_reg[2]/C
+
+
+

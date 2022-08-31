@@ -1,0 +1,1140 @@
+
+*** Running vivado
+    with args -log Top_Student.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11236 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 356.938 ; gain = 99.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-6157] synthesizing module 'main_clk' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/main_clk.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'main_clk' (1#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/main_clk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'oled_debounce_signal' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/oled_debounce_signal.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dflipflop' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/dflipflop.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dflipflop' (2#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/dflipflop.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'oled_debounce_signal' (3#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/oled_debounce_signal.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Oled_coordinates' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Oled_coordinates.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_coordinates' (4#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Oled_coordinates.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (5#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6157] synthesizing module 'micin_to_oled' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/micin_to_oled.v:23]
+WARNING: [Synth 8-3848] Net new_mic_in in module/entity micin_to_oled does not have driver. [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/micin_to_oled.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'micin_to_oled' (6#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/micin_to_oled.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Menu_display' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Menu_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'StudentA' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/StudentA.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'StudentA' (7#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/StudentA.v:23]
+INFO: [Synth 8-6157] synthesizing module 'StudentB' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/StudentB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'StudentB' (8#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/StudentB.v:23]
+INFO: [Synth 8-6157] synthesizing module 'AmpDisplay' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/AmpDisplay.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'AmpDisplay' (9#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/AmpDisplay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'spDisplay' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/spDisplay.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'spDisplay' (10#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/spDisplay.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Menu_display' (11#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Menu_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'subtask_4B' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/subtask_4B.v:23]
+INFO: [Synth 8-6157] synthesizing module 'change_color' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/change_color.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/change_color.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'change_color' (12#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/change_color.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'subtask_4B' (13#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/subtask_4B.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shared_Proj_Display' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/shared_Proj_Display.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'shared_Proj_Display' (14#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/shared_Proj_Display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (15#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+WARNING: [Synth 8-350] instance 'oled' of module 'Oled_Display' requires 15 connections, but only 10 given [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Top_Student.v:109]
+INFO: [Synth 8-6157] synthesizing module 'Top_StudentA' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_StudentA.v:18]
+INFO: [Synth 8-6157] synthesizing module 'Multiplier' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/Multiplier.v:24]
+INFO: [Synth 8-6157] synthesizing module 'pulse' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (16#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pulse' (17#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DP_auto' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/DP_auto.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/DP_auto.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'DP_auto' (18#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/DP_auto.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tune_logic' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/tune_logic.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tune_logic' (19#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/tune_logic.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dec_to_seg' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/dec_to_seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dec_to_seg' (20#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/dec_to_seg.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'dec_val' does not match port width (4) of module 'dec_to_seg' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/Multiplier.v:47]
+WARNING: [Synth 8-689] width (32) of port connection 'dec_val' does not match port width (4) of module 'dec_to_seg' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/Multiplier.v:48]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegMod' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/SevenSegMod.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegMod' (21#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/SevenSegMod.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/Multiplier.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplier' (22#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/Multiplier.v:24]
+INFO: [Synth 8-6157] synthesizing module 'raw_numbers' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/raw_numbers.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'raw_numbers' (23#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/raw_numbers.v:23]
+INFO: [Synth 8-6157] synthesizing module 'audio_wave' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VolumeCase' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/VolumeCase.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VolumeCase' (24#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/VolumeCase.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'audio_wave' (25#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/audio_wave.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_StudentA.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'Top_StudentA' (26#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_StudentA.v:18]
+WARNING: [Synth 8-350] instance 'nolabel_line114' of module 'Top_StudentA' requires 9 connections, but only 8 given [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Top_Student.v:114]
+INFO: [Synth 8-6157] synthesizing module 'dual_mic_dist' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/dual_mic_dist.v:24]
+INFO: [Synth 8-6157] synthesizing module 'sound_distance' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sound_distance.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_tune' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/dist_tune.v:24]
+WARNING: [Synth 8-6014] Unused sequential element average_val_reg was removed.  [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/dist_tune.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'dist_tune' (27#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/dist_tune.v:24]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sound_distance.v:68]
+WARNING: [Synth 8-6014] Unused sequential element average_bit_reg was removed.  [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sound_distance.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'sound_distance' (28#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sound_distance.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'temps' does not match port width (5) of module 'sound_distance' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/dual_mic_dist.v:32]
+WARNING: [Synth 8-689] width (7) of port connection 'temps' does not match port width (5) of module 'sound_distance' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/dual_mic_dist.v:33]
+INFO: [Synth 8-6157] synthesizing module 'sqrt' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sqrt' (29#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dual_mic_dist' (30#1) [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/dual_mic_dist.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (31#1) [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+WARNING: [Synth 8-3331] design Top_StudentA has unconnected port BTres
+WARNING: [Synth 8-3331] design subtask_4B has unconnected port clk20k
+WARNING: [Synth 8-3331] design subtask_4B has unconnected port sw11
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[11]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[10]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[9]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[8]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[7]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[6]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[5]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[4]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[3]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[2]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[1]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[0]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port rgbs[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 428.551 ; gain = 171.594
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin oled:reset to constant 0 [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Top_Student.v:109]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 428.551 ; gain = 171.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 428.551 ; gain = 171.594
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 784.211 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 784.211 ; gain = 527.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 784.211 ; gain = 527.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 784.211 ; gain = 527.254
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "values1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "values1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "load_dp0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "post_load_count0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "seg1" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "seg2" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "flip0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/tune_logic.v:49]
+INFO: [Synth 8-5545] ROM "flag0" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "xer0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "xer0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/Multiplier.v:66]
+INFO: [Synth 8-5546] ROM "avg_vol0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "max_vol0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "max_vol0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/dist_tune.v:70]
+INFO: [Synth 8-5545] ROM "flag0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "xer0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "xer0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "avg_sound0" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "avg_sound0" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sqrt.v:50]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+WARNING: [Synth 8-327] inferring latch for variable 'Bup_mpx_reg' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_StudentA.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'Bdw_mpx_reg' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_StudentA.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'BTauto_reg' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_StudentA.v:49]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 784.211 ; gain = 527.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     31 Bit       Adders := 5     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 1     
+	   3 Input     18 Bit       Adders := 16    
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 5     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               31 Bit    Registers := 3     
+	               28 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 16    
+	               12 Bit    Registers := 13    
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 13    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 55    
++---Multipliers : 
+	                 5x31  Multipliers := 1     
+	                31x31  Multipliers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     31 Bit        Muxes := 4     
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	  17 Input     21 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	  16 Input     19 Bit        Muxes := 2     
+	   2 Input     18 Bit        Muxes := 27    
+	   2 Input     17 Bit        Muxes := 1     
+	  28 Input     16 Bit        Muxes := 3     
+	  21 Input     16 Bit        Muxes := 1     
+	  13 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 8     
+	   2 Input     16 Bit        Muxes := 40    
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 12    
+	  14 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 5     
+	  16 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	  32 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 79    
+	  27 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+	  14 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module main_clk 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module dflipflop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Audio_Capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module micin_to_oled 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  16 Input     19 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module StudentA 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  28 Input     16 Bit        Muxes := 1     
+	  21 Input     16 Bit        Muxes := 1     
+Module StudentB 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  28 Input     16 Bit        Muxes := 1     
+	  13 Input     16 Bit        Muxes := 1     
+Module AmpDisplay 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  28 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+Module spDisplay 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  27 Input      1 Bit        Muxes := 1     
+Module Menu_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+Module change_color 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+Module subtask_4B 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 39    
+	   2 Input      1 Bit        Muxes := 36    
+Module shared_Proj_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 1     
+	   3 Input     18 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module DFF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DP_auto 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	  14 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 1     
+Module tune_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                 5x31  Multipliers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module dec_to_seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 2     
+Module SevenSegMod 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module Multiplier 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module raw_numbers 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+Module VolumeCase 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+Module audio_wave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  16 Input     19 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Top_StudentA 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module dist_tune 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module sound_distance 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	  17 Input     21 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sqrt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   3 Input     18 Bit       Adders := 15    
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 15    
+Module dual_mic_dist 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 1     
++---Multipliers : 
+	                31x31  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "values1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "load_dp0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "flip0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "post_load_count0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "flag0" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/tune_logic.v:49]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/tune_logic.v:49]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+DSP Report: Generating DSP xer3, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP xer3.
+DSP Report: operator xer3 is absorbed into DSP xer3.
+DSP Report: operator xer3 is absorbed into DSP xer3.
+DSP Report: Generating DSP xer3, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP xer3.
+DSP Report: operator xer3 is absorbed into DSP xer3.
+DSP Report: operator xer3 is absorbed into DSP xer3.
+INFO: [Synth 8-5545] ROM "sevsegclk/clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "avg_vol0" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP hold, operation Mode is: A*B.
+DSP Report: operator hold is absorbed into DSP hold.
+INFO: [Synth 8-5545] ROM "segdisp/sevsegclk/clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkddd/clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fivehz/clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "volume/SevSegOut/sevsegclk/clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "max_vol0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element tune_distance/t20khz/clk_out_reg was removed.  [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/main_clk.v:29]
+INFO: [Synth 8-5545] ROM "clock_hz/clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tune_distance/btclk/clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tune_distance/flag0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fivehz/clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "avg_sound0" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+DSP Report: Generating DSP tune_distance/xer3, operation Mode is: A2*B.
+DSP Report: register avg_sound_reg is absorbed into DSP tune_distance/xer3.
+DSP Report: operator tune_distance/xer3 is absorbed into DSP tune_distance/xer3.
+INFO: [Synth 8-4471] merging register 'avg_sound_reg[11:0]' into 'avg_sound_reg[11:0]' [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sound_distance.v:32]
+WARNING: [Synth 8-6014] Unused sequential element avg_sound_reg was removed.  [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/sound_distance.v:32]
+INFO: [Synth 8-5545] ROM "tune_distance/btclk/clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tune_distance/flag0" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_hz/clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "avg_sound0" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fivehz/clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP tune_distance/xer3, operation Mode is: A2*B.
+DSP Report: register avg_sound_reg is absorbed into DSP tune_distance/xer3.
+DSP Report: operator tune_distance/xer3 is absorbed into DSP tune_distance/xer3.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/Vivado Proj/temp/SoundDisplay/SoundDisplay.srcs/sources_1/new/dual_mic_dist.v:42]
+DSP Report: Generating DSP pre_sqrt0, operation Mode is: A*B.
+DSP Report: operator pre_sqrt0 is absorbed into DSP pre_sqrt0.
+DSP Report: operator pre_sqrt0 is absorbed into DSP pre_sqrt0.
+DSP Report: Generating DSP pre_sqrt0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pre_sqrt0 is absorbed into DSP pre_sqrt0.
+DSP Report: operator pre_sqrt0 is absorbed into DSP pre_sqrt0.
+DSP Report: Generating DSP pre_sqrt0, operation Mode is: A*B.
+DSP Report: operator pre_sqrt0 is absorbed into DSP pre_sqrt0.
+DSP Report: operator pre_sqrt0 is absorbed into DSP pre_sqrt0.
+DSP Report: Generating DSP pre_sqrt0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pre_sqrt0 is absorbed into DSP pre_sqrt0.
+DSP Report: operator pre_sqrt0 is absorbed into DSP pre_sqrt0.
+WARNING: [Synth 8-3936] Found unconnected internal register 'an_hold_reg' and it is trimmed from '5' to '4' bits. [C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.srcs/sources_1/new/Top_Student.v:150]
+WARNING: [Synth 8-3331] design Top_StudentA has unconnected port BTres
+WARNING: [Synth 8-3331] design shared_Proj_Display has unconnected port raw_x[30]
+WARNING: [Synth 8-3331] design subtask_4B has unconnected port clk20k
+WARNING: [Synth 8-3331] design subtask_4B has unconnected port sw11
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[11]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[10]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[9]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[8]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[7]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[6]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[5]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[4]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[3]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[2]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[1]
+WARNING: [Synth 8-3331] design micin_to_oled has unconnected port new_mic_in[0]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port rgbs[2]
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_high_reg[0]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[5]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_mid_reg[0]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[1]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_low_reg[0]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[5]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/border_color_reg[0]' (FDE) to 'subtask4B/new_colors/border_color_reg[1]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/background_color_reg[0]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[1]'
+INFO: [Synth 8-3886] merging instance 'shared_proj/pixel_data_reg[0]' (FDR) to 'shared_proj/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectA/pixel_data_reg[0]' (FDS) to 'firstDisplay/selectA/pixel_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectB/pixel_data_reg[0]' (FDS) to 'firstDisplay/selectB/pixel_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectAMP/pixel_data_reg[0]' (FDS) to 'firstDisplay/selectAMP/pixel_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectSP/pixel_data_reg[0]' (FDS) to 'firstDisplay/selectSP/pixel_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_high_reg[1]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[5]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_mid_reg[1]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[2]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_low_reg[1]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[5]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/border_color_reg[1]' (FDE) to 'subtask4B/new_colors/border_color_reg[2]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/background_color_reg[1]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[2]'
+INFO: [Synth 8-3886] merging instance 'shared_proj/pixel_data_reg[1]' (FDR) to 'shared_proj/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectA/pixel_data_reg[1]' (FDS) to 'firstDisplay/selectA/pixel_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectB/pixel_data_reg[1]' (FDS) to 'firstDisplay/selectB/pixel_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectAMP/pixel_data_reg[1]' (FDS) to 'firstDisplay/selectAMP/pixel_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectSP/pixel_data_reg[1]' (FDS) to 'firstDisplay/selectSP/pixel_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_high_reg[2]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[5]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_mid_reg[2]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[3]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_low_reg[2]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[5]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/border_color_reg[2]' (FDE) to 'subtask4B/new_colors/border_color_reg[3]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/background_color_reg[2]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[3]'
+INFO: [Synth 8-3886] merging instance 'shared_proj/pixel_data_reg[2]' (FDR) to 'shared_proj/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectA/pixel_data_reg[2]' (FDS) to 'firstDisplay/selectA/pixel_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectB/pixel_data_reg[2]' (FDS) to 'firstDisplay/selectB/pixel_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectAMP/pixel_data_reg[2]' (FDS) to 'firstDisplay/selectAMP/pixel_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectSP/pixel_data_reg[2]' (FDS) to 'firstDisplay/selectSP/pixel_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_high_reg[3]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[5]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_mid_reg[3]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[4]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_low_reg[3]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[5]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/border_color_reg[3]' (FDE) to 'subtask4B/new_colors/border_color_reg[4]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/background_color_reg[3]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[4]'
+INFO: [Synth 8-3886] merging instance 'shared_proj/pixel_data_reg[3]' (FDR) to 'shared_proj/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectA/pixel_data_reg[3]' (FDS) to 'firstDisplay/selectA/pixel_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectB/pixel_data_reg[3]' (FDS) to 'firstDisplay/selectB/pixel_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectAMP/pixel_data_reg[3]' (FDS) to 'firstDisplay/selectAMP/pixel_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectSP/pixel_data_reg[3]' (FDS) to 'firstDisplay/selectSP/pixel_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_high_reg[4]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[5]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_mid_reg[4]' (FDE) to 'subtask4B/new_colors/background_color_reg[12]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_low_reg[4]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[5]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/background_color_reg[4]' (FDE) to 'subtask4B/new_colors/background_color_reg[12]'
+INFO: [Synth 8-3886] merging instance 'shared_proj/pixel_data_reg[4]' (FDR) to 'shared_proj/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_high_reg[5]' (FDE) to 'subtask4B/new_colors/background_color_reg[5]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_low_reg[5]' (FDE) to 'subtask4B/new_colors/background_color_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (subtask4B/\new_colors/background_color_reg[5] )
+INFO: [Synth 8-3886] merging instance 'shared_proj/pixel_data_reg[5]' (FDR) to 'shared_proj/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectA/pixel_data_reg[5]' (FDS) to 'firstDisplay/selectA/pixel_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectB/pixel_data_reg[5]' (FDS) to 'firstDisplay/selectB/pixel_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectAMP/pixel_data_reg[5]' (FDS) to 'firstDisplay/selectAMP/pixel_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectSP/pixel_data_reg[5]' (FDS) to 'firstDisplay/selectSP/pixel_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_high_reg[6]' (FDE) to 'subtask4B/new_colors/volume_color_high_reg[10]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_mid_reg[6]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[7]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_low_reg[6]' (FDE) to 'subtask4B/new_colors/background_color_reg[12]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/background_color_reg[6]' (FDE) to 'subtask4B/new_colors/background_color_reg[12]'
+INFO: [Synth 8-3886] merging instance 'shared_proj/pixel_data_reg[6]' (FDR) to 'shared_proj/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectA/pixel_data_reg[6]' (FDS) to 'firstDisplay/selectA/pixel_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectB/pixel_data_reg[6]' (FDS) to 'firstDisplay/selectB/pixel_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectAMP/pixel_data_reg[6]' (FDS) to 'firstDisplay/selectAMP/pixel_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectSP/pixel_data_reg[6]' (FDS) to 'firstDisplay/selectSP/pixel_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_high_reg[7]' (FDE) to 'subtask4B/new_colors/volume_color_high_reg[10]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_mid_reg[7]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[8]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_low_reg[7]' (FDE) to 'subtask4B/new_colors/background_color_reg[12]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/background_color_reg[7]' (FDE) to 'subtask4B/new_colors/background_color_reg[12]'
+INFO: [Synth 8-3886] merging instance 'shared_proj/pixel_data_reg[7]' (FDR) to 'shared_proj/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectA/pixel_data_reg[7]' (FDS) to 'firstDisplay/selectA/pixel_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectB/pixel_data_reg[7]' (FDS) to 'firstDisplay/selectB/pixel_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectAMP/pixel_data_reg[7]' (FDS) to 'firstDisplay/selectAMP/pixel_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectSP/pixel_data_reg[7]' (FDS) to 'firstDisplay/selectSP/pixel_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_high_reg[8]' (FDE) to 'subtask4B/new_colors/volume_color_high_reg[10]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_mid_reg[8]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[9]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_low_reg[8]' (FDE) to 'subtask4B/new_colors/background_color_reg[12]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/background_color_reg[8]' (FDE) to 'subtask4B/new_colors/background_color_reg[12]'
+INFO: [Synth 8-3886] merging instance 'shared_proj/pixel_data_reg[8]' (FDR) to 'shared_proj/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectA/pixel_data_reg[8]' (FDS) to 'firstDisplay/selectA/pixel_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectB/pixel_data_reg[8]' (FDS) to 'firstDisplay/selectB/pixel_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectAMP/pixel_data_reg[8]' (FDS) to 'firstDisplay/selectAMP/pixel_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectSP/pixel_data_reg[8]' (FDS) to 'firstDisplay/selectSP/pixel_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_high_reg[9]' (FDE) to 'subtask4B/new_colors/volume_color_high_reg[10]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_mid_reg[9]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[10]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_low_reg[9]' (FDE) to 'subtask4B/new_colors/background_color_reg[12]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/background_color_reg[9]' (FDE) to 'subtask4B/new_colors/background_color_reg[12]'
+INFO: [Synth 8-3886] merging instance 'shared_proj/pixel_data_reg[9]' (FDR) to 'shared_proj/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectA/pixel_data_reg[9]' (FDS) to 'firstDisplay/selectA/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectB/pixel_data_reg[9]' (FDS) to 'firstDisplay/selectB/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectAMP/pixel_data_reg[9]' (FDS) to 'firstDisplay/selectAMP/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectSP/pixel_data_reg[9]' (FDS) to 'firstDisplay/selectSP/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_mid_reg[10]' (FDE) to 'subtask4B/new_colors/border_color_reg[5]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_low_reg[10]' (FDE) to 'subtask4B/new_colors/background_color_reg[12]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/background_color_reg[10]' (FDE) to 'subtask4B/new_colors/background_color_reg[12]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectA/pixel_data_reg[10]' (FDS) to 'firstDisplay/selectA/pixel_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectB/pixel_data_reg[10]' (FDS) to 'firstDisplay/selectB/pixel_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectAMP/pixel_data_reg[10]' (FDS) to 'firstDisplay/selectAMP/pixel_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'firstDisplay/selectSP/pixel_data_reg[10]' (FDS) to 'firstDisplay/selectSP/pixel_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_high_reg[11]' (FDE) to 'subtask4B/new_colors/volume_color_high_reg[15]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_mid_reg[11]' (FDE) to 'subtask4B/new_colors/volume_color_mid_reg[12]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/volume_color_low_reg[11]' (FDE) to 'subtask4B/new_colors/volume_color_low_reg[15]'
+INFO: [Synth 8-3886] merging instance 'subtask4B/new_colors/background_color_reg[11]' (FDE) to 'subtask4B/new_colors/background_color_reg[12]'
+INFO: [Synth 8-3886] merging instance 'shared_proj/pixel_data_reg[11]' (FDS) to 'shared_proj/pixel_data_reg[15]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line114/amplifier/\auto_display/seg1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line114/amplifier/\auto_display/seg3_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line114/Aprocess/\volume/SevSegOut/sevsegout_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line114/amplifier/\s3hold_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (new_colors/background_color_reg[5]) is unused and will be removed from module subtask_4B.
+WARNING: [Synth 8-3332] Sequential element (auto_display/seg1_reg[7]) is unused and will be removed from module Multiplier.
+WARNING: [Synth 8-3332] Sequential element (auto_display/seg3_reg[7]) is unused and will be removed from module Multiplier.
+WARNING: [Synth 8-3332] Sequential element (s3hold_reg[7]) is unused and will be removed from module Multiplier.
+WARNING: [Synth 8-3332] Sequential element (volume/SevSegOut/sevsegout_reg[7]) is unused and will be removed from module audio_wave.
+WARNING: [Synth 8-3332] Sequential element (average_bit_tuned_reg[0]) is unused and will be removed from module sound_distance.
+WARNING: [Synth 8-3332] Sequential element (clk_out_reg) is unused and will be removed from module main_clk.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line114/rawdata/\segdisp/sevsegout_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (segdisp/sevsegout_reg[7]) is unused and will be removed from module raw_numbers.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 784.211 ; gain = 527.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++---------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|tune_logic     | A2*B            | 18     | 6      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|tune_logic     | (PCIN>>17)+A2*B | 15     | 6      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplier     | A*B             | 12     | 5      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sound_distance | A2*B            | 12     | 5      | -      | -      | 17     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|sound_distance | A2*B            | 12     | 5      | -      | -      | 17     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|dual_mic_dist  | A*B             | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dual_mic_dist  | (PCIN>>17)+A*B  | 14     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dual_mic_dist  | A*B             | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dual_mic_dist  | (PCIN>>17)+A*B  | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 824.086 ; gain = 567.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 897.402 ; gain = 640.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 1020.953 ; gain = 763.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1020.953 ; gain = 763.996
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1020.953 ; gain = 763.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1020.953 ; gain = 763.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 1020.953 ; gain = 763.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 1020.953 ; gain = 763.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 1020.953 ; gain = 763.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     8|
+|2     |CARRY4    |   593|
+|3     |DSP48E1   |     5|
+|4     |DSP48E1_1 |     3|
+|5     |LUT1      |   224|
+|6     |LUT2      |   584|
+|7     |LUT3      |   619|
+|8     |LUT4      |   427|
+|9     |LUT5      |   302|
+|10    |LUT6      |  1008|
+|11    |MUXF7     |    28|
+|12    |MUXF8     |     4|
+|13    |FDE_1     |    32|
+|14    |FDRE      |  1350|
+|15    |FDSE      |    45|
+|16    |LD        |     3|
+|17    |IBUF      |    15|
+|18    |OBUF      |    39|
+|19    |OBUFT     |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------------+-----------------------+------+
+|      |Instance            |Module                 |Cells |
++------+--------------------+-----------------------+------+
+|1     |top                 |                       |  5290|
+|2     |  audio             |Audio_Capture          |    65|
+|3     |  btups             |oled_debounce_signal   |     3|
+|4     |    first           |dflipflop_43           |     2|
+|5     |    second          |dflipflop_44           |     1|
+|6     |  eightHz           |main_clk               |    63|
+|7     |  firstDisplay      |Menu_display           |    21|
+|8     |    selectA         |StudentA               |     1|
+|9     |    selectAMP       |AmpDisplay             |     1|
+|10    |    selectB         |StudentB               |     2|
+|11    |    selectSP        |spDisplay              |     2|
+|12    |  menuChoice        |oled_debounce_signal_0 |     4|
+|13    |    first           |dflipflop_41           |     3|
+|14    |    second          |dflipflop_42           |     1|
+|15    |  menuSelection     |oled_debounce_signal_1 |     3|
+|16    |    first           |dflipflop_39           |     2|
+|17    |    second          |dflipflop_40           |     1|
+|18    |  new_mic_in_data   |micin_to_oled          |   129|
+|19    |  nolabel_line114   |Top_StudentA           |  1990|
+|20    |    Aprocess        |audio_wave             |   256|
+|21    |      fivehz        |main_clk_36            |    55|
+|22    |      volume        |VolumeCase             |   105|
+|23    |        SevSegOut   |SevenSegMod_37         |    91|
+|24    |          sevsegclk |main_clk_38            |    53|
+|25    |    amplifier       |Multiplier             |  1476|
+|26    |      auto_display  |DP_auto                |   245|
+|27    |      auto_tune     |tune_logic             |   779|
+|28    |      buttoAuto     |pulse_23               |     5|
+|29    |        flip        |DFF_34                 |     4|
+|30    |        flips       |DFF_35                 |     1|
+|31    |      buttoDown     |pulse_24               |     3|
+|32    |        flip        |DFF_32                 |     1|
+|33    |        flips       |DFF_33                 |     2|
+|34    |      buttonUP      |pulse_25               |     6|
+|35    |        flip        |DFF_30                 |     3|
+|36    |        flips       |DFF_31                 |     3|
+|37    |      clock_bt      |main_clk_26            |    63|
+|38    |      seggg         |SevenSegMod_27         |    81|
+|39    |        sevsegclk   |main_clk_29            |    52|
+|40    |      twentykhz     |main_clk_28            |    63|
+|41    |    rawdata         |raw_numbers            |   191|
+|42    |      clkddd        |main_clk_21            |    55|
+|43    |      segdisp       |SevenSegMod            |   107|
+|44    |        sevsegclk   |main_clk_22            |    53|
+|45    |    twentykhz       |main_clk_20            |    63|
+|46    |  nolabel_line116   |dual_mic_dist          |  1114|
+|47    |    mic1_dist       |sound_distance         |   418|
+|48    |      clock_hz      |main_clk_13            |    55|
+|49    |      fivehz        |main_clk_14            |    58|
+|50    |      tune_distance |dist_tune_15           |   161|
+|51    |        btclk       |main_clk_16            |    55|
+|52    |        buttonUP    |pulse_17               |    11|
+|53    |          flip      |DFF_18                 |     3|
+|54    |          flips     |DFF_19                 |     8|
+|55    |    mic2_dist       |sound_distance_8       |   402|
+|56    |      clock_hz      |main_clk_9             |    55|
+|57    |      fivehz        |main_clk_10            |    58|
+|58    |      tune_distance |dist_tune              |   161|
+|59    |        btclk       |main_clk_11            |    55|
+|60    |        buttonUP    |pulse                  |    11|
+|61    |          flip      |DFF                    |     3|
+|62    |          flips     |DFF_12                 |     8|
+|63    |  nolabel_line94    |Audio_Capture_2        |    65|
+|64    |  oled              |Oled_Display           |   740|
+|65    |  oled_debounce     |main_clk_3             |    63|
+|66    |  oledbgS           |oled_debounce_signal_4 |     3|
+|67    |    first           |dflipflop              |     2|
+|68    |    second          |dflipflop_7            |     1|
+|69    |  shared_proj       |shared_Proj_Display    |   621|
+|70    |  sizMHz            |main_clk_5             |    65|
+|71    |  subtask4B         |subtask_4B             |    58|
+|72    |    new_colors      |change_color           |    27|
+|73    |  twentyKHz         |main_clk_6             |    63|
++------+--------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 1020.953 ; gain = 763.996
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:17 . Memory (MB): peak = 1020.953 ; gain = 408.336
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 1020.953 ; gain = 763.996
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 683 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 35 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 32 instances
+  LD => LDCE: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+264 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:31 . Memory (MB): peak = 1020.953 ; gain = 776.816
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Andrew/Desktop/WK Dsp/SoundDisplay.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1020.953 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 31 04:55:01 2020...
